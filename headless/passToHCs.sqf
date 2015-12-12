@@ -81,7 +81,9 @@ while {true} do {
   };
 
   // If no HCs present, wait for HC to rejoin
-  if ( (isNull HC) && (isNull HC2) && (isNull HC3) ) then { waitUntil {!isNull HC}; };  
+  // if ( (isNull HC) && (isNull HC2) && (isNull HC3) ) then { waitUntil {!isNull HC}; };  
+  
+  if ( (isNull HC) && (isNil "HC2") && (isNil "HC3")) then { waitUntil {!isNull HC}; };
 
   // Check to auto enable Round-Robin load balancing strategy
   if ( (!isNull HC && !isNull HC2) || (!isNull HC && !isNull HC3) || (!isNull HC2 && !isNull HC3) ) then { _loadBalance = true; };
