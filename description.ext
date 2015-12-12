@@ -1,0 +1,158 @@
+OnLoadMission = "A mobile radio station is trying to get a message sent - their adversaries try to stop them from completing the broadcast";
+author = "Nomisum, XiviD, Fusselwurm für Gruppe Adler";  //appears as author in overview and loading screen
+overviewText = "US vs. Russians"; //appears in overview and loading screen
+onLoadName = "Breaking Contact"; //mission name for loading screen only
+overviewPicture = ""; //mission picture for loading screen only
+onLoadMissionTime = True;
+disabledAI = 0; //1
+enableDebugConsole = 1;
+loadScreen = "pic\loading.jpg";
+respawnDelay = 9999999; 
+
+#include "CSSA3\CSSA3_header.hpp"
+
+//respawnDelay = 9999999; // 9999999 or greater = No Respawn
+//Changes respawn, respawnDialog and respawnTemplates parameters.
+
+
+
+class Header
+{
+	gameType = Seize;
+	minPlayers = 15;
+	maxPlayers = 112;
+};
+
+
+class Params
+{
+	class TimeOfDay
+	{
+		title = "Time of Day";
+		values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23};
+		texts[] = {"00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00"};
+		default = 8;
+	};
+
+	class WeatherSetting
+    {
+		title = "Weather Settings";
+		values[] = {0,1,2,3};
+		texts[] = {"SUNNY DAY","RAINY DAY","CLOUDY DAY","RANDOM WEATHER"};
+		default = 0;
+    };
+
+	class AllowedSpawnDistance
+	{
+		title = "Spawn Distance BLUFOR";
+		values[] = {2000, 3000, 4000,5000,6000};
+		texts[] = {"2km", "3km", "4km","5km","6km"};
+		default = 3000;
+	};
+
+	class OpforMoney
+	{
+		title = "Finances OPFOR";
+		values[] = {1000, 2000, 3000, 4000, 5000, 6000};
+		texts[] = {"1000k","2000k","3000k","4000k","5000k","6000k"};
+		default = 1000;
+	};
+
+	class BluforMoney
+	{
+		title = "Finances BLUFOR";
+		values[] = {1000, 2000, 3000, 4000, 5000, 6000};
+		texts[] = {"1000k","2000k","3000k","4000k","5000k","6000k"};
+		default = 2000;
+	};
+
+	class OpforTimeToSend
+	{
+		title = "How long should OPFOR have to send before they win?";
+		values[] = {300, 600, 900, 1800, 2700, 3600, 4500, 5400, 6300};
+		texts[] = {"5'","10'", "15'", "30'", "45'", "1h'", "1h15'","1h30'","1h45'"};
+		default = 4500;
+	};
+
+	class Zeitbeschleunigung
+	{
+		title = "Time Acceleration";
+		values[] = {1,2,4};
+		texts[] = {"normal","2h in 1h","4h in 1h"};
+		default = 1;
+	};
+
+	class InGameReplayAccuracy
+	{
+		title = "InGame Replay Accuracy";
+		values[] = {1,2,3,4,5};
+		texts[] = {"every 1s","every 2s","every 3s","every 4s","every 5s"};
+		default = 2;
+	};
+
+	class EnableReplay
+	{
+		title = "enable replay";
+		values[] = {false, true};
+		texts[] = {"no", "yes"};
+		default = true;
+		isGlobal = 0;
+	};
+
+	class IsStreamable
+	{
+		title = "enable live stream (needs 'enable replay')";
+		values[] = {false, true};
+		texts[] = {"no","yes"};
+		default = 0;
+		isGlobal = 0;
+	};
+	
+	class Debug_Mode
+	{
+		title = "Enable Debug Log";
+		values[] = {false, true};
+		texts[] = {"no","yes"};
+		default = 0;
+	};
+
+	class JIPtime
+	{
+		title = "JIP allowed for";
+		values[] = {60, 180, 600, 1800, 999999};
+		texts[] = {"1min","3min","10min","30min","always (16h)"};
+		default = 1800;
+	};
+};
+
+class CfgSounds
+{
+	sounds[] = {beam,beep};
+	class beam
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "beam";
+		// filename, volume, pitch
+		sound[] = {"sounds\beam.ogg", 1, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class beep
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "beep";
+		// filename, volume, pitch
+		sound[] = {"sounds\beep2.ogg", 1, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class signal_lost
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "signal_lost";
+		// filename, volume, pitch
+		sound[] = {"sounds\signal_lost.ogg", 1, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+};

@@ -287,7 +287,7 @@ class Mission
 						};
 						class Item2
 						{
-							value="1";
+							value="2";
 							parentCls="ace_captives_moduleSettings";
 							typeName="requireSurrender";
 						};
@@ -1131,6 +1131,7 @@ class Mission
 					id=22;
 					side="EAST";
 					vehicle="O_officer_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="MAJOR";
 					skill=0.5;
@@ -1147,6 +1148,7 @@ class Mission
 					id=23;
 					side="EAST";
 					vehicle="O_Soldier_SL_F";
+					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.5;
 					text="opfor_assistant";
@@ -1170,6 +1172,7 @@ class Mission
 					id=24;
 					side="EAST";
 					vehicle="O_Soldier_SL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.5;
@@ -1183,6 +1186,7 @@ class Mission
 					id=25;
 					side="EAST";
 					vehicle="O_medic_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Squad Medic";
@@ -1195,6 +1199,7 @@ class Mission
 					id=26;
 					side="EAST";
 					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Team Leader";
@@ -1207,6 +1212,7 @@ class Mission
 					id=27;
 					side="EAST";
 					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Machine Gunner";
@@ -1219,6 +1225,7 @@ class Mission
 					id=28;
 					side="EAST";
 					vehicle="O_Soldier_AT_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="AT-Specialist";
@@ -1231,6 +1238,7 @@ class Mission
 					id=29;
 					side="EAST";
 					vehicle="O_engineer_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Engineer";
@@ -1243,6 +1251,7 @@ class Mission
 					id=30;
 					side="EAST";
 					vehicle="O_Soldier_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
 					description="Rifleman";
@@ -1255,6 +1264,7 @@ class Mission
 					id=31;
 					side="EAST";
 					vehicle="O_Soldier_F";
+					player="PLAY CDG";
 					skill=0.5;
 					description="Rifleman";
 				};
@@ -1266,6 +1276,7 @@ class Mission
 					id=32;
 					side="EAST";
 					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Team Leader";
@@ -1278,6 +1289,7 @@ class Mission
 					id=33;
 					side="EAST";
 					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Machine Gunner";
@@ -1290,6 +1302,7 @@ class Mission
 					id=34;
 					side="EAST";
 					vehicle="O_Soldier_AT_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Anti Tank Specialist";
@@ -1302,6 +1315,7 @@ class Mission
 					id=35;
 					side="EAST";
 					vehicle="O_Soldier_A_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
 					description="Ammo Bearer";
@@ -1314,6 +1328,7 @@ class Mission
 					id=36;
 					side="EAST";
 					vehicle="O_Soldier_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
 					description="Rifleman";
@@ -1326,6 +1341,7 @@ class Mission
 					id=37;
 					side="EAST";
 					vehicle="O_Soldier_F";
+					player="PLAY CDG";
 					skill=0.5;
 					description="Rifleman";
 				};
@@ -1345,6 +1361,7 @@ class Mission
 					id=38;
 					side="EAST";
 					vehicle="O_Soldier_SL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.5;
@@ -1358,6 +1375,7 @@ class Mission
 					id=39;
 					side="EAST";
 					vehicle="O_medic_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Squad Medic";
@@ -1370,6 +1388,7 @@ class Mission
 					id=40;
 					side="EAST";
 					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Team Leader";
@@ -1382,6 +1401,7 @@ class Mission
 					id=41;
 					side="EAST";
 					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Machine Gunner";
@@ -1394,6 +1414,7 @@ class Mission
 					id=42;
 					side="EAST";
 					vehicle="O_Soldier_AT_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="AT-Specialist";
@@ -1406,6 +1427,7 @@ class Mission
 					id=43;
 					side="EAST";
 					vehicle="O_engineer_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Engineer";
@@ -1418,6 +1440,7 @@ class Mission
 					id=44;
 					side="EAST";
 					vehicle="O_Soldier_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
 					description="Rifleman";
@@ -1430,6 +1453,7 @@ class Mission
 					id=45;
 					side="EAST";
 					vehicle="O_Soldier_F";
+					player="PLAY CDG";
 					skill=0.5;
 					description="Rifleman";
 				};
@@ -1441,6 +1465,7 @@ class Mission
 					id=46;
 					side="EAST";
 					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Team Leader";
@@ -1453,6 +1478,7 @@ class Mission
 					id=47;
 					side="EAST";
 					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Machine Gunner";
@@ -1465,6 +1491,7 @@ class Mission
 					id=48;
 					side="EAST";
 					vehicle="O_Soldier_AT_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Anti Tank Specialist";
@@ -1477,6 +1504,7 @@ class Mission
 					id=49;
 					side="EAST";
 					vehicle="O_Soldier_A_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
 					description="Ammo Bearer";
@@ -1489,6 +1517,7 @@ class Mission
 					id=50;
 					side="EAST";
 					vehicle="O_Soldier_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
 					description="Rifleman";
@@ -1501,6 +1530,7 @@ class Mission
 					id=51;
 					side="EAST";
 					vehicle="O_Soldier_F";
+					player="PLAY CDG";
 					skill=0.5;
 					description="Rifleman";
 				};
@@ -1520,6 +1550,7 @@ class Mission
 					id=52;
 					side="EAST";
 					vehicle="O_Soldier_SL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.5;
@@ -1533,6 +1564,7 @@ class Mission
 					id=53;
 					side="EAST";
 					vehicle="O_medic_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Squad Medic";
@@ -1545,6 +1577,7 @@ class Mission
 					id=54;
 					side="EAST";
 					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Team Leader";
@@ -1557,6 +1590,7 @@ class Mission
 					id=55;
 					side="EAST";
 					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Machine Gunner";
@@ -1569,6 +1603,7 @@ class Mission
 					id=56;
 					side="EAST";
 					vehicle="O_Soldier_AT_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="AT-Specialist";
@@ -1581,6 +1616,7 @@ class Mission
 					id=57;
 					side="EAST";
 					vehicle="O_engineer_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Engineer";
@@ -1593,6 +1629,7 @@ class Mission
 					id=58;
 					side="EAST";
 					vehicle="O_Soldier_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
 					description="Rifleman";
@@ -1605,6 +1642,7 @@ class Mission
 					id=59;
 					side="EAST";
 					vehicle="O_Soldier_F";
+					player="PLAY CDG";
 					skill=0.5;
 					description="Rifleman";
 				};
@@ -1616,6 +1654,7 @@ class Mission
 					id=60;
 					side="EAST";
 					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Team Leader";
@@ -1628,6 +1667,7 @@ class Mission
 					id=61;
 					side="EAST";
 					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Machine Gunner";
@@ -1640,6 +1680,7 @@ class Mission
 					id=62;
 					side="EAST";
 					vehicle="O_Soldier_AT_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Anti Tank Specialist";
@@ -1652,6 +1693,7 @@ class Mission
 					id=63;
 					side="EAST";
 					vehicle="O_Soldier_A_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
 					description="Ammo Bearer";
@@ -1664,6 +1706,7 @@ class Mission
 					id=64;
 					side="EAST";
 					vehicle="O_Soldier_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
 					description="Rifleman";
@@ -1676,6 +1719,7 @@ class Mission
 					id=65;
 					side="EAST";
 					vehicle="O_Soldier_F";
+					player="PLAY CDG";
 					skill=0.5;
 					description="Rifleman";
 				};
@@ -1695,6 +1739,7 @@ class Mission
 					id=66;
 					side="EAST";
 					vehicle="O_crew_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
@@ -1708,6 +1753,7 @@ class Mission
 					id=67;
 					side="EAST";
 					vehicle="O_crew_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Crewman-Driver";
@@ -1720,6 +1766,7 @@ class Mission
 					id=68;
 					side="EAST";
 					vehicle="O_crew_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Crewman-Gunner";
@@ -1740,6 +1787,7 @@ class Mission
 					id=69;
 					side="WEST";
 					vehicle="B_officer_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="MAJOR";
 					skill=0.5;
@@ -1755,6 +1803,7 @@ class Mission
 					id=70;
 					side="WEST";
 					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.5;
 					text="blufor_assistant";
@@ -1778,6 +1827,7 @@ class Mission
 					id=71;
 					side="WEST";
 					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
@@ -1791,6 +1841,7 @@ class Mission
 					id=72;
 					side="WEST";
 					vehicle="B_medic_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Squad Medic";
@@ -1803,6 +1854,7 @@ class Mission
 					id=73;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Team Leader";
@@ -1815,6 +1867,7 @@ class Mission
 					id=74;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Machine Gunner";
@@ -1827,6 +1880,7 @@ class Mission
 					id=75;
 					side="WEST";
 					vehicle="B_soldier_AT_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="AT Specialist";
@@ -1839,6 +1893,7 @@ class Mission
 					id=76;
 					side="WEST";
 					vehicle="B_engineer_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Engineer";
@@ -1851,6 +1906,7 @@ class Mission
 					id=77;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
 					description="Rifleman";
@@ -1863,6 +1919,7 @@ class Mission
 					id=78;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					skill=0.5;
 					description="Rifleman";
 				};
@@ -1874,6 +1931,7 @@ class Mission
 					id=79;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Team Leader";
@@ -1886,6 +1944,7 @@ class Mission
 					id=80;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Machine Gunner";
@@ -1898,6 +1957,7 @@ class Mission
 					id=81;
 					side="WEST";
 					vehicle="B_soldier_AT_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="AT-Specialist";
@@ -1910,6 +1970,7 @@ class Mission
 					id=82;
 					side="WEST";
 					vehicle="B_Soldier_A_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Ammo Bearer";
@@ -1922,6 +1983,7 @@ class Mission
 					id=83;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
 					description="Rifleman";
@@ -1934,6 +1996,7 @@ class Mission
 					id=84;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					skill=0.5;
 					description="Rifleman";
 				};
@@ -1953,6 +2016,7 @@ class Mission
 					id=85;
 					side="WEST";
 					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
@@ -1966,6 +2030,7 @@ class Mission
 					id=86;
 					side="WEST";
 					vehicle="B_medic_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Squad Medic";
@@ -1978,6 +2043,7 @@ class Mission
 					id=87;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Team Leader";
@@ -1990,6 +2056,7 @@ class Mission
 					id=88;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Machine Gunner";
@@ -2002,6 +2069,7 @@ class Mission
 					id=89;
 					side="WEST";
 					vehicle="B_soldier_AT_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="AT Specialist";
@@ -2014,6 +2082,7 @@ class Mission
 					id=90;
 					side="WEST";
 					vehicle="B_engineer_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Engineer";
@@ -2026,6 +2095,7 @@ class Mission
 					id=91;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
 					description="Rifleman";
@@ -2038,6 +2108,7 @@ class Mission
 					id=92;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					skill=0.5;
 					description="Rifleman";
 				};
@@ -2049,6 +2120,7 @@ class Mission
 					id=93;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Team Leader";
@@ -2061,6 +2133,7 @@ class Mission
 					id=94;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Machine Gunner";
@@ -2073,6 +2146,7 @@ class Mission
 					id=95;
 					side="WEST";
 					vehicle="B_soldier_AT_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="AT-Specialist";
@@ -2085,6 +2159,7 @@ class Mission
 					id=96;
 					side="WEST";
 					vehicle="B_Soldier_A_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Ammo Bearer";
@@ -2097,6 +2172,7 @@ class Mission
 					id=97;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
 					description="Rifleman";
@@ -2109,6 +2185,7 @@ class Mission
 					id=98;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					skill=0.5;
 					description="Rifleman";
 				};
@@ -2128,6 +2205,7 @@ class Mission
 					id=99;
 					side="WEST";
 					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
@@ -2141,6 +2219,7 @@ class Mission
 					id=100;
 					side="WEST";
 					vehicle="B_medic_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Squad Medic";
@@ -2153,6 +2232,7 @@ class Mission
 					id=101;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Team Leader";
@@ -2165,6 +2245,7 @@ class Mission
 					id=102;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Machine Gunner";
@@ -2177,6 +2258,7 @@ class Mission
 					id=103;
 					side="WEST";
 					vehicle="B_soldier_AT_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="AT Specialist";
@@ -2189,6 +2271,7 @@ class Mission
 					id=104;
 					side="WEST";
 					vehicle="B_engineer_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Engineer";
@@ -2201,6 +2284,7 @@ class Mission
 					id=105;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
 					description="Rifleman";
@@ -2213,6 +2297,7 @@ class Mission
 					id=106;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					skill=0.5;
 					description="Rifleman";
 				};
@@ -2224,6 +2309,7 @@ class Mission
 					id=107;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Team Leader";
@@ -2236,6 +2322,7 @@ class Mission
 					id=108;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Machine Gunner";
@@ -2248,6 +2335,7 @@ class Mission
 					id=109;
 					side="WEST";
 					vehicle="B_soldier_AT_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="AT-Specialist";
@@ -2260,6 +2348,7 @@ class Mission
 					id=110;
 					side="WEST";
 					vehicle="B_Soldier_A_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Ammo Bearer";
@@ -2272,6 +2361,7 @@ class Mission
 					id=111;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
 					description="Rifleman";
@@ -2284,6 +2374,7 @@ class Mission
 					id=112;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					skill=0.5;
 					description="Rifleman";
 				};
@@ -2303,6 +2394,7 @@ class Mission
 					id=113;
 					side="WEST";
 					vehicle="B_crew_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Crewman-Gunner";
@@ -2315,6 +2407,7 @@ class Mission
 					id=114;
 					side="WEST";
 					vehicle="B_crew_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
@@ -2328,6 +2421,7 @@ class Mission
 					id=115;
 					side="WEST";
 					vehicle="B_crew_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Crewman-Driver";
@@ -2348,6 +2442,7 @@ class Mission
 					id=116;
 					side="WEST";
 					vehicle="B_crew_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Crewman-Gunner";
@@ -2360,6 +2455,7 @@ class Mission
 					id=117;
 					side="WEST";
 					vehicle="B_crew_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
@@ -2373,6 +2469,7 @@ class Mission
 					id=118;
 					side="WEST";
 					vehicle="B_crew_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Crewman-Driver";
@@ -2393,6 +2490,7 @@ class Mission
 					id=119;
 					side="WEST";
 					vehicle="B_crew_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Crewman-Gunner";
@@ -2405,6 +2503,7 @@ class Mission
 					id=120;
 					side="WEST";
 					vehicle="B_crew_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
@@ -2418,6 +2517,7 @@ class Mission
 					id=121;
 					side="WEST";
 					vehicle="B_crew_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Crewman-Driver";
@@ -2472,6 +2572,7 @@ class Mission
 					id=123;
 					side="WEST";
 					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
@@ -2485,6 +2586,7 @@ class Mission
 					id=124;
 					side="WEST";
 					vehicle="B_crew_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Helicopter Pilot";
@@ -2497,6 +2599,7 @@ class Mission
 					id=125;
 					side="WEST";
 					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
 					description="Helicopter Pilot";
@@ -2517,6 +2620,7 @@ class Mission
 					id=126;
 					side="EAST";
 					vehicle="O_crew_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
@@ -2530,6 +2634,7 @@ class Mission
 					id=127;
 					side="EAST";
 					vehicle="O_crew_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Crewman-Driver";
@@ -2542,6 +2647,7 @@ class Mission
 					id=128;
 					side="EAST";
 					vehicle="O_crew_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
 					description="Crewman-Gunner";
