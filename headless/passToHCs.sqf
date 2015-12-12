@@ -86,7 +86,7 @@ while {true} do {
   if ( (isNull HC) && (isNil "HC2") && (isNil "HC3")) then { waitUntil {!isNull HC}; };
 
   // Check to auto enable Round-Robin load balancing strategy
-  if ( (!isNull HC && !isNull HC2) || (!isNull HC && !isNull HC3) || (!isNull HC2 && !isNull HC3) ) then { _loadBalance = true; };
+  // if ( (!isNull HC && !isNull HC2) || (!isNull HC && !isNull HC3) || (!isNull HC2 && !isNull HC3) ) then { _loadBalance = true; };
 
   if ( _loadBalance ) then {
     diag_log "passToHCs: Starting load-balanced transfer of AI groups to HCs";
@@ -99,7 +99,7 @@ while {true} do {
   _currentHC = 0;
 
   if (!isNull HC) then { _currentHC = 1; } else { 
-    if (!isNull HC2) then { _currentHC = 2; } else { _currentHC = 3; };
+    if (isNil "HC2") then { _currentHC = 2; } else { _currentHC = 3; };
   };
 
   // Pass the AI
@@ -116,8 +116,8 @@ while {true} do {
 
       if ( _loadBalance ) then {
         switch (_currentHC) do {
-          case 1: { _rc = _x setGroupOwner _HC_ID; if (!isNull HC2) then { _currentHC = 2; } else { _currentHC = 3; }; };
-          case 2: { _rc = _x setGroupOwner _HC2_ID; if (!isNull HC3) then { _currentHC = 3; } else { _currentHC = 1; }; };
+          case 1: { _rc = _x setGroupOwner _HC_ID; if (!isNil "HC2") then { _currentHC = 2; } else { _currentHC = 3; }; };
+          case 2: { _rc = _x setGroupOwner _HC2_ID; if (!isNil "HC3") then { _currentHC = 3; } else { _currentHC = 1; }; };
           case 3: { _rc = _x setGroupOwner _HC3_ID; if (!isNull HC) then { _currentHC = 1; } else { _currentHC = 2; }; };
           default { diag_log format["passToHCs: [ERROR] No Valid HC to pass to.  _currentHC = %1", _currentHC]; };
         };
