@@ -1,4 +1,4 @@
-#include "..\..\missionMacros.h"
+#include "..\missionMacros.h"
 
 waitUntil {player == player};
 

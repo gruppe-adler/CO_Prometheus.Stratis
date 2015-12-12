@@ -14,7 +14,7 @@ islands=(
 	Gorgona
 	IsolaDiCapraia
 	Kunduz
-	Namalsk
+	namalsk
 	Panthera3
 	Sara_dbe1
 	Shapur_BAF
