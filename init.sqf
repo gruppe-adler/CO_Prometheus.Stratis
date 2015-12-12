@@ -66,11 +66,11 @@ call compile preprocessfile "SHK_pos\shk_pos_init.sqf";
 
 clearInventory = compile preprocessFile "helpers\clearInventory.sqf";
 
+[] execVM "setup\adjustInitialSpawnPosition.sqf"; diag_log format ["setup: initial spawn position initiated"];	
 
 if (hasInterface) then {
 
-	player allowDamage false;
-	[] execVM "setup\adjustInitialSpawnPosition.sqf"; diag_log format ["setup: initial spawn position initiated"];	
+	
 
 	enableSentences false;
 	

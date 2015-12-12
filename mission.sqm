@@ -31,7 +31,8 @@ class Mission
 		"3DEN",
 		"a3_modules_f_curator_curator",
 		"ace_cargo",
-		"A3_Characters_F_Civil"
+		"A3_Characters_F_Civil",
+		"A3_Supplies_F_Heli_CargoNets"
 	};
 	addOnsAuto[]=
 	{
@@ -63,6 +64,7 @@ class Mission
 		"a3_modules_f_curator_curator",
 		"ace_cargo",
 		"A3_Characters_F_Civil",
+		"A3_Supplies_F_Heli_CargoNets",
 		"a3_map_stratis"
 	};
 	randomSeed=13454984;
@@ -3494,6 +3496,30 @@ class Mission
 					text="HC2";
 				};
 			};
+		};
+	};
+	class Vehicles
+	{
+		items=2;
+		class Item0
+		{
+			position[]={1550.2682,5.5,5034.0859};
+			id=152;
+			side="EMPTY";
+			vehicle="B_CargoNet_01_ammo_F";
+			skill=0.60000002;
+			text="arsenal_1";
+			init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal; 0 = [this] execVM ""helpers\clearInventory.sqf"";";
+		};
+		class Item1
+		{
+			position[]={1794.5131,5.5,5925.5215};
+			id=153;
+			side="EMPTY";
+			vehicle="B_CargoNet_01_ammo_F";
+			skill=0.60000002;
+			text="arsenal_2";
+			init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal; 0 = [this] execVM ""helpers\clearInventory.sqf"";";
 		};
 	};
 	class Markers

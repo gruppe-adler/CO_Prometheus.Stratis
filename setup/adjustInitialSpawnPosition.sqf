@@ -1,7 +1,4 @@
 #include "..\missionMacros.h"
-
-waitUntil {player == player};
-
 // spawn outside of map on flat terrain if possible
 _alternativeSpawnsOutsideMap = [[-2500,-500],[-500,-2500]];
 
@@ -10,16 +7,30 @@ if !(_playerPositionsForCurrentWorld select 2) then {
 	_playerPositionsForCurrentWorld = _alternativeSpawnsOutsideMap;
 };
 
-_playerPosition = _playerPositionsForCurrentWorld select 1;
+_targetPosition= _playerPositionsForCurrentWorld select 1;
 if (side player == blufor) then {
-	_playerPosition = _playerPositionsForCurrentWorld select 0;
+	_targetPosition= _playerPositionsForCurrentWorld select 0;
 };
 
-_msg = format["moving player to %1 ...", _playerPosition];
+
+if (isServer) exitWith {
+	_tmpPos_arsenal_1 = [_targetPosition,[0,10], random 360,0,[5,80]] call SHK_pos;
+	arsenal_1 setPos _tmpPos_arsenal_1; 
+
+	_tmpPos_arsenal_2 = [_targetPosition,[0,10], random 360,0,[5,80]] call SHK_pos;
+	arsenal_2 setPos _tmpPos_arsenal_2; 
+};
+
+
+waitUntil {player == player};
+
+
+
+_msg = format["moving player to %1 ...", _targetPosition];
 debugLog(_msg);
 
 
-_tmpPos = [_playerPosition,[0,10], random 360,0,[1,50]] call SHK_pos;
+_tmpPos = [_targetPosition,[0,10], random 360,0,[1,50]] call SHK_pos;
 
 player setPos _tmpPos;
 
