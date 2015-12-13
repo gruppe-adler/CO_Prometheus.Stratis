@@ -75,4 +75,5 @@ if (hasInterface) then {
 	enableSentences false;
 	
 	[player] execVM "loadouts\_client.sqf"; diag_log format ["setup: loadout %1 initiated",player];
+	[] execVM "helpers\intro.sqf";
 };

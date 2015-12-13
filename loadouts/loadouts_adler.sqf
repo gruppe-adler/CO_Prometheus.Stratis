@@ -51,16 +51,19 @@ if (woodland) then {
 
 
 blufor_random_primaryweapon = [
-	"rhs_weap_m4a1_carryhandle_grip2",
-	"rhs_weap_m4a1_carryhandle",
-	"rhs_weap_m4a1_carryhandle_pmag",
-	"rhs_weap_m4a1_carryhandle_grip"
+	"SMA_HK416"
 ];
 
 set_hk416_ammo = {
 	this = _this select 0;
 	[this, "SMA_30Rnd_556x45_M855A1", 6] call addMagazinesToVest;
 	[this, "SMA_30Rnd_556x45_M855A1_Tracer", 6] call addMagazinesToBackpack;
+};
+
+set_hk417_ammo = {
+	this = _this select 0;
+	[this, "SMA_20Rnd_762x51mm_M80A1_EPR", 6] call addMagazinesToVest;
+	[this, "SMA_20Rnd_762x51mm_M80A1_EPR_Tracer", 6] call addMagazinesToBackpack;
 };
 
 blufor_random_mg = [
@@ -96,7 +99,7 @@ blufor_basic = {
 	this linkItem "ItemCompass";
 	this linkItem "ItemWatch";
 	this linkItem "tf_anprc148jem";
-	this linkItem customGoggles;
+	
 };
 
 blufor_default = {
@@ -287,15 +290,20 @@ blufor_marksman = {
 	this forceAddUniform blufor_uniform;
 	this addVest bluforVest;
 	this addHeadgear helmet_marksman;
+	this addBackpack blufor_backpack;
+
+	[this] call set_hk417_ammo;
 	
 	[this, "SmokeShell", 1] call addMagazinesToVest;
 	[this, "SmokeShellRed", 1] call addMagazinesToVest;
 	[this, "HandGrenade", 1] call addMagazinesToVest;
 
 	this addWeapon "Binocular";
-	this addWeapon "Leupold_Mk4";
-	this addPrimaryWeaponItem "rhsusf_acc_ACOG_d";
-	this addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
+	this addWeapon "SMA_HK417_16in_afg";
+	this addPrimaryWeaponItem "SMA_supp_762";
+	this addPrimaryWeaponItem "FHQ_acc_ANPEQ15_black";
+	this addPrimaryWeaponItem "optic_Hamr";
+	this addPrimaryWeaponItem "bipod_01_F_blk";
 
 	
 	[this] call blufor_basic;

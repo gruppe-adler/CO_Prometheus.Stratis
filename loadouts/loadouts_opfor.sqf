@@ -205,6 +205,7 @@ opfor_marksman = {
 	this forceAddUniform "rhs_uniform_flora_patchless_alt";
 	this addVest "rhs_6b23_ML_sniper";
 	this addHeadgear "rhs_6b27m_ml";
+	this addBackpack "rhs_sidor";
 
 	[this, "rhs_10Rnd_762x54mmR_7N1", 9] call addMagazinesToBackpack;
 	
