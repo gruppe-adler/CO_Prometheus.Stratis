@@ -28,8 +28,8 @@ waitUntil {player == player};
 
 
 
-_msg = format["moving player to %1 ...", _targetPosition];
-debugLog(_msg);
+// _msg = format["moving player to %1 ...", _targetPosition];
+// debugLog(_msg);
 
 
 _tmpPos = [_targetPosition,[0,10], random 360,0,[1,50]] call SHK_pos;
