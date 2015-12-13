@@ -59,7 +59,7 @@ if (isServer) then {
 
 diag_log format ["setup: server done"];
 
-[] execVM "CSSA3\CSSA3_init.sqf";
+// [] execVM "CSSA3\CSSA3_init.sqf";
 
 //SHK POS
 call compile preprocessfile "SHK_pos\shk_pos_init.sqf";
