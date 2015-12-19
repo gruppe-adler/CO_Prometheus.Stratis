@@ -81,3 +81,88 @@ class Params
 
 
 };
+
+/*
+class CfgORBAT {
+
+	class commander_west {
+		id = 0;
+		idType = 2;
+		side = "West";
+		size = "FireTeam";
+		type = "HQ"; 
+		insignia = "pic/gruppe-adler.paa";
+		colorInsignia[] = {1,1,1,1};
+		commanderRank = "Captain";
+		tags[] = {"BLUFOR"};
+		text = "HQ Commander";
+		textShort = "HQ";
+		description= "Commander of western side.";
+		assets[] = {};
+
+		class squad1
+		{
+			id = 1;
+			type = "Infantry";
+			size = "Squad";
+			side = "West";
+			tags[] = {"BLUFOR"};
+ 		};
+
+ 		class squad2
+		{
+			id = 2;
+			type = "Infantry";
+			size = "Squad";
+			side = "West";
+			tags[] = {"BLUFOR"};
+ 		};
+
+ 		class squad3
+		{
+			id = 3;
+			type = "Infantry";
+			size = "Squad";
+			side = "West";
+			tags[] = {"BLUFOR"};
+ 		};
+
+ 		class 1apc
+		{
+			id = 4;
+			type = "MechanizedInfantry";
+			size = "FireTeam";
+			side = "West";
+			tags[] = {"BLUFOR"};
+ 		};
+
+ 		class 2apc
+		{
+			id = 5;
+			type = "MechanizedInfantry";
+			size = "FireTeam";
+			side = "West";
+			tags[] = {"BLUFOR"};
+ 		};
+
+ 		class 1armor
+		{
+			id = 6;
+			type = "Armored";
+			size = "FireTeam";
+			side = "West";
+			tags[] = {"BLUFOR"};
+ 		};
+
+ 		class 1heli
+		{
+			id = 7;
+			type = "Helicopter";
+			size = "FireTeam";
+			side = "West";
+			tags[] = {"BLUFOR"};
+ 		};
+	};
+
+	
+};*/

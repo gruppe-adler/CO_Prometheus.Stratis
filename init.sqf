@@ -18,7 +18,7 @@ if ((paramsArray select 0) == 1) then {woodland = true;} else {woodland = false;
 setCustomWeather = {
 	skipTime -24; 
 	0 setOvercast (_this select 0); 
-	setViewDistance 7000;
+	setViewDistance 5000;
 	skipTime 24;
 };
 
@@ -35,9 +35,13 @@ if (!isMultiplayer) then { // Editor
 	{_x disableAI "MOVE"} forEach allUnits;
 };
 
-execVM "headless\passToHCs.sqf";
+
 
 if (isServer) then {
+
+	execVM "headless\passToHCs.sqf";
+
+	["Initialize"] call BIS_fnc_dynamicGroups;
 	
 	// set to full moon date
 	setDate [2015, 2, 2, TIME_OF_DAY, 1];
@@ -69,7 +73,7 @@ clearInventory = compile preprocessFile "helpers\clearInventory.sqf";
 [] execVM "setup\adjustInitialSpawnPosition.sqf"; diag_log format ["setup: initial spawn position initiated"];	
 
 if (hasInterface) then {
-
+	["InitializePlayer", [player]] call BIS_fnc_dynamicGroups;
 	
 
 	enableSentences false;
