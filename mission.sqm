@@ -363,7 +363,7 @@ class Mission
 						};
 						class Item1
 						{
-							value="0";
+							value="1";
 							parentCls="ace_weather_ModuleSettings";
 							typeName="useACEWeather";
 						};
@@ -815,7 +815,7 @@ class Mission
 						};
 						class Item1
 						{
-							value="1";
+							value="0";
 							parentCls="ace_winddeflection_ModuleSettings";
 							typeName="vehicleEnabled";
 						};
@@ -855,7 +855,7 @@ class Mission
 						items=2;
 						class Item0
 						{
-							value="1";
+							value="0";
 							parentCls="ace_viewdistance_ModuleSettings";
 							typeName="moduleViewDistanceEnabled";
 						};
@@ -1801,6 +1801,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.5;
 					text="sql1";
+					init="(group this) setGroupId [""Alpha""]; if(!local this) exitWith {};";
 					description="Squad Leader";
 				};
 				class Item1
@@ -1991,6 +1992,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.5;
 					text="sql2";
+					init="(group this) setGroupId [""Bravo""]; if(!local this) exitWith {};";
 					description="Squad Leader";
 				};
 				class Item1
@@ -2181,6 +2183,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.5;
 					text="sql3";
+					init="(group this) setGroupId [""Charlie""]; if(!local this) exitWith {};";
 					description="Squad Leader";
 				};
 				class Item1
@@ -2383,6 +2386,7 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
+					init="(group this) setGroupId [""Delta""]; if(!local this) exitWith {};";
 					description="APC-Commander";
 				};
 				class Item2
@@ -2431,6 +2435,7 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
+					init="(group this) setGroupId [""Gamma""]; if(!local this) exitWith {};";
 					description="Tank-Commander";
 				};
 				class Item2
@@ -2479,6 +2484,7 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
+					init="(group this) setGroupId [""Halo""]; if(!local this) exitWith {};";
 					description="APC-Commander";
 				};
 				class Item2
@@ -2548,6 +2554,7 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
+					init="(group this) setGroupId [""Echo""]; if(!local this) exitWith {};";
 					description="Helicopter Pilot";
 				};
 				class Item1
@@ -3484,7 +3491,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={1596.545,0,6059.874};
+					position[]={1628.2838,-0.30633235,5947.5474};
 					class args
 					{
 						items=3;
