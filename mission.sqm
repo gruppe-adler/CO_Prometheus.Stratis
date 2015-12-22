@@ -70,14 +70,17 @@ class Mission
 	randomSeed=13454984;
 	class Intel
 	{
-		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
-		startWind=0.1;
-		startWaves=0.1;
-		forecastWeather=0.30000001;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
+		startWeather=0.84999996;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastWeather=0.84999996;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
+		rainForced=1;
+		lightningsForced=1;
+		wavesForced=1;
+		windForced=1;
 		year=2035;
 		month=7;
 		day=6;
@@ -375,7 +378,7 @@ class Mission
 						};
 						class Item3
 						{
-							value="1";
+							value="0";
 							parentCls="ace_weather_ModuleSettings";
 							typeName="syncWind";
 						};
@@ -387,7 +390,7 @@ class Mission
 						};
 						class Item5
 						{
-							value="60";
+							value="120";
 							parentCls="ace_weather_ModuleSettings";
 							typeName="serverUpdateInterval";
 						};
@@ -1760,7 +1763,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.5;
 					text="blufor_teamlead";
-					init="[""Initialize""] call BIS_fnc_dynamicGroups;";
+					init="(group this) setGroupId [""Command""]; if(!local this) exitWith {};";
 					description="Commander (Zeus)";
 					syncId=2;
 					synchronizations[]={4};
