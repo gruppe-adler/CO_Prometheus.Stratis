@@ -16,7 +16,7 @@ waitUntil {!isNil "HC"};
 while {true} do {
 
 	if (true) then {
-		 if ((isPlayer)||(_x in units group _HC)) exitWith {};
+		 if ((isPlayer _x)||(_x in units group _HC)) exitWith {};
     	 if (isNull _HC) exitWith{};
     	{ _x setGroupOwner _HC; //adding all units that aren't player or aren't already under HC to HC
     	}
