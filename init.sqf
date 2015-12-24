@@ -6,11 +6,11 @@
 call compile preprocessFile "islandConfig.sqf";
 
 // read parameters
-TIME_OF_DAY = paramsArray select 0;
-WEATHER_SETTING = paramsArray select 1;
-TIME_ACCELERATION = paramsArray select 2;
-AR3PLAY_ENABLE_REPLAY = (paramsArray select 3) == 1;
-AR3PLAY_IS_STREAMABLE = (paramsArray select 4) == 1;
+TIME_OF_DAY = paramsArray select 1;
+WEATHER_SETTING = paramsArray select 2;
+TIME_ACCELERATION = paramsArray select 3;
+AR3PLAY_ENABLE_REPLAY = (paramsArray select 4) == 1;
+AR3PLAY_IS_STREAMABLE = (paramsArray select 5) == 1;
 if ((paramsArray select 0) == 1) then {woodland = true;} else {woodland = false;};
 
 
@@ -39,7 +39,7 @@ enableSentences false;
 enableRadio false;
 
 //when headless param is set, then
-if ((paramsArray select 5) == 1) then {
+if ((paramsArray select 6) == 1) then {
 		// Werthles Headless Script Parameters v2.3
 	// 1. Repeating - true/Once - false,
 	// 2. Time between repeats (seconds),
