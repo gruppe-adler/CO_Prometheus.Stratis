@@ -40,7 +40,9 @@ enableRadio false;
 
 if (isServer) then {
 
-	execVM "headless\passToHCs.sqf";
+	if ((paramsArray select 5) == 1) then {
+		execVM "headless\passToHCs.sqf";
+	};
 
 	["Initialize"] call BIS_fnc_dynamicGroups;
 	
@@ -58,7 +60,12 @@ if (isServer) then {
  	[] execVM "helpers\medical_settings.sqf";
 
  	[] spawn {
- 		{if (!isPlayer _x) then {sleep 0.2; [_x] execVM "loadouts\_client.sqf"};} forEach allUnits;
+ 		{
+ 		if (!isPlayer _x) then {sleep 0.2; [_x] execVM "loadouts\_client.sqf"
+		[_x] execVM "setup\adjustInitialSpawnPositionAI.sqf"; diag_log format ["setup: initial spawn position for %1 set",_x];	
+ 		};
+ 		
+ 		} forEach allUnits;
  	};
 };
 

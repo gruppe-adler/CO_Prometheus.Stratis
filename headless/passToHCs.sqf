@@ -19,8 +19,10 @@ while {true} do {
 		 if ((isPlayer _x)||(_x in units group _HC)) exitWith {};
     	 if (isNull _HC) exitWith{};
     	{ _x setGroupOwner _HC; //adding all units that aren't player or aren't already under HC to HC
+    	diag_log format ["%1 successfully transferred to HC",_x];
     	}
     	forEach allUnits;
+
 	};
 
 	sleep 10;
