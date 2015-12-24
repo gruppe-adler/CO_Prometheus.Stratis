@@ -5,6 +5,7 @@ call compile preprocessFileLineNumbers "islandConfig.sqf";
 
 // wait for which camo will be used
 waitUntil {!isNil "ISLAND_TARGET_POSITIONS"};
+woodland = (ISLAND_TARGET_POSITIONS select (ISLANDS find worldName)) select 3;
 
 // read parameters
 TIME_OF_DAY = paramsArray select 0;
