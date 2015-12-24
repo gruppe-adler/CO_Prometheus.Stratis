@@ -61,9 +61,12 @@ if (isServer) then {
 
  	[] spawn {
  		{
- 		if (!isPlayer _x) then {sleep 0.2; [_x] execVM "loadouts\_client.sqf"
-		0 = [_x] execVM "setup\adjustInitialSpawnPositionAI.sqf";	
- 		};
+ 		
+ 			if (!isPlayer _x) then {
+	 			sleep 0.2; 
+	 			[_x] execVM "loadouts\_client.sqf";
+				0 = [_x] execVM "setup\adjustInitialSpawnPositionAI.sqf";	
+ 			};
  		
  		} forEach allUnits;
  	};
