@@ -35,7 +35,8 @@ if (!isMultiplayer) then { // Editor
 	{_x disableAI "MOVE"} forEach allUnits;
 };
 
-
+enableSentences false;
+enableRadio false;
 
 if (isServer) then {
 
@@ -76,8 +77,6 @@ if (hasInterface) then {
 	["InitializePlayer", [player]] call BIS_fnc_dynamicGroups;
 	
 
-	enableSentences false;
-	
 	[player] execVM "loadouts\_client.sqf"; diag_log format ["setup: loadout %1 initiated",player];
 	[] execVM "helpers\intro.sqf";
 };
