@@ -1,9 +1,10 @@
 #include "\z\ace\addons\main\script_component.hpp"
 #include "\z\ace\addons\main\script_macros.hpp"
 
+call compile preprocessFileLineNumbers "islandConfig.sqf";
 
-// islandconfig must be before initgui!
-call compile preprocessFile "islandConfig.sqf";
+// wait for which camo will be used
+waitUntil {!isNil "ISLAND_TARGET_POSITIONS"};
 
 // read parameters
 TIME_OF_DAY = paramsArray select 0;
