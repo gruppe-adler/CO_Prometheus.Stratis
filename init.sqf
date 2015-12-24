@@ -38,11 +38,11 @@ if (!isMultiplayer) then { // Editor
 enableSentences false;
 enableRadio false;
 
-if (isServer) then {
-
-	if ((paramsArray select 5) == 1) then {
+if ((paramsArray select 5) == 1) then {
 		execVM "headless\passToHCs.sqf";
 	};
+
+if (isServer) then {
 
 	["Initialize"] call BIS_fnc_dynamicGroups;
 	

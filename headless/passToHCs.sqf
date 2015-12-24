@@ -9,7 +9,11 @@
  *
  * In the description of the HeadlessClient virtual unit, put HC
  */
-if (!isServer) exitWith {};
+
+if (!hasInterface && !isDedicated) exitWith {
+	//run on headless clients only
+};
+
 _HC = owner HC; //"HC" denotes the name of the unit in-game
 waitUntil {!isNil "HC"};
 
