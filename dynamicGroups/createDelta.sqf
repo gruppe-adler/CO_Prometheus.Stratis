@@ -8,4 +8,5 @@ if (isServer) then
    _data   = ["GRAD_delta", "Delta", false]; // [<Insignia>, <Group Name>, <Private>]
  
    ["RegisterGroup", [_group, _leader, _data]] call BIS_fnc_dynamicGroups;
+   {[ _x, "GRAD_delta"] call "BIS_fnc_setUnitInsignia";} forEach _group;
 };
