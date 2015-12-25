@@ -9,6 +9,6 @@ if (isServer) then
  
    ["RegisterGroup", [_group, _leader, _data]] call BIS_fnc_dynamicGroups;
 
-   {[ _x, "GRAD_command"] call "BIS_fnc_setUnitInsignia";} forEach units _group;
+   {[ _x, "GRAD_command"] call BIS_fnc_setUnitInsignia;} forEach units _group;
 };
 
