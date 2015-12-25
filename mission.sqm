@@ -1763,7 +1763,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.5;
 					text="blufor_teamlead";
-					init="(group this) setGroupId [""Command""]; if(!local this) exitWith {};";
+					init="0 = [this] execVM ""dynamicGroups\createAlpha.sqf"";";
 					description="Commander (Zeus)";
 					syncId=2;
 					synchronizations[]={4};
@@ -1804,8 +1804,8 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.5;
 					text="sql1";
-					init="(group this) setGroupId [""Alpha""]; if(!local this) exitWith {};";
-					description="Squad Leader";
+					init="0 = [this] execVM ""dynamicGroups\createAlpha.sqf"";";
+					description="Squad Leader (Alpha)";
 				};
 				class Item1
 				{
@@ -1995,8 +1995,8 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.5;
 					text="sql2";
-					init="(group this) setGroupId [""Bravo""]; if(!local this) exitWith {};";
-					description="Squad Leader";
+					init="0 = [this] execVM ""dynamicGroups\createBravo.sqf"";";
+					description="Squad Leader (Bravo)";
 				};
 				class Item1
 				{
@@ -2186,8 +2186,8 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.5;
 					text="sql3";
-					init="(group this) setGroupId [""Charlie""]; if(!local this) exitWith {};";
-					description="Squad Leader";
+					init="0 = [this] execVM ""dynamicGroups\createCharlie.sqf"";";
+					description="Squad Leader (Charlie)";
 				};
 				class Item1
 				{
@@ -2389,8 +2389,8 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
-					init="(group this) setGroupId [""Delta""]; if(!local this) exitWith {};";
-					description="APC-Commander";
+					init="0 = [this] execVM ""dynamicGroups\createDelta.sqf"";";
+					description="APC-Commander (Delta)";
 				};
 				class Item2
 				{
@@ -2557,7 +2557,7 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
-					init="(group this) setGroupId [""Echo""]; if(!local this) exitWith {};";
+					init="0 = [this] execVM ""dynamicGroups\createHeli.sqf"";";
 					description="Helicopter Pilot";
 				};
 				class Item1
