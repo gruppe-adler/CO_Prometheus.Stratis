@@ -91,7 +91,7 @@ class Params
 
 class CfgUnitInsignia
 {
-	class GRAD_command
+	class grad_command
 	{
 		displayName = "GRAD Command"; // Name displayed in Arsenal
 		author = "Gruppe Adler"; // Author displayed in Arsenal
@@ -99,7 +99,7 @@ class CfgUnitInsignia
 		textureVehicle = ""; // Does nothing currently, reserved for future use
 	};
 
-	class GRAD_alpha
+	class grad_alpha
 	{
 		displayName = "GRAD Alpha"; // Name displayed in Arsenal
 		author = "Gruppe Adler"; // Author displayed in Arsenal
@@ -107,7 +107,7 @@ class CfgUnitInsignia
 		textureVehicle = ""; // Does nothing currently, reserved for future use
 	};
 
-	class GRAD_bravo
+	class grad_bravo
 	{
 		displayName = "GRAD Bravo"; // Name displayed in Arsenal
 		author = "Gruppe Adler"; // Author displayed in Arsenal
@@ -115,7 +115,7 @@ class CfgUnitInsignia
 		textureVehicle = ""; // Does nothing currently, reserved for future use
 	};
 
-	class GRAD_charlie
+	class grad_charlie
 	{
 		displayName = "GRAD Charlie"; // Name displayed in Arsenal
 		author = "Gruppe Adler"; // Author displayed in Arsenal
@@ -123,7 +123,7 @@ class CfgUnitInsignia
 		textureVehicle = ""; // Does nothing currently, reserved for future use
 	};
 
-	class GRAD_delta
+	class grad_delta
 	{
 		displayName = "GRAD Delta"; // Name displayed in Arsenal
 		author = "Gruppe Adler"; // Author displayed in Arsenal
@@ -131,7 +131,7 @@ class CfgUnitInsignia
 		textureVehicle = ""; // Does nothing currently, reserved for future use
 	};
 
-	class GRAD_heli
+	class grad_heli
 	{
 		displayName = "GRAD Heli"; // Name displayed in Arsenal
 		author = "Gruppe Adler"; // Author displayed in Arsenal
