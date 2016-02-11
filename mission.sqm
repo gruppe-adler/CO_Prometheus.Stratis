@@ -996,7 +996,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={1692.9139,-0.0011337784,6061.6851};
+					position[]={1692.9139,-0.024152923,6061.6851};
 					class args
 					{
 						items=13;
@@ -1044,7 +1044,7 @@ class Mission
 						};
 						class Item7
 						{
-							value="2";
+							value="1";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="enableUnconsciousnessAI";
 						};
@@ -1056,7 +1056,7 @@ class Mission
 						};
 						class Item9
 						{
-							value="1";
+							value="0";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="preventInstaDeath";
 						};
