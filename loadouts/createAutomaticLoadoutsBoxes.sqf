@@ -29,8 +29,36 @@ _ger_tropentarn_loadouts = [
 ]
 ];
 
+// US OCP
+_us_ocp_loadouts = [
+["OCP Loadouts"],
+[
+["us_ocp_default","Grundausrüstung ohne Waffe"],
+["us_ocp_medic","Sanitäter"],
+["us_ocp_marksman","Gruppenscharfschütze"],
+["us_ocp_lmg","LMG"],
+["us_ocp_grenadier","Grenadier"],
+["us_ocp_rifleman","Schütze"]
+]
+];
+
+// US UCP
+_us_ucp_loadouts = [
+["UCP Loadouts"],
+[
+["us_ucp_default","Grundausrüstung ohne Waffe"],
+["us_ucp_medic","Sanitäter"],
+["us_ucp_marksman","Gruppenscharfschütze"],
+["us_ucp_lmg","LMG"],
+["us_ucp_grenadier","Grenadier"],
+["us_ucp_rifleman","Schütze"]
+]
+];
+
+
+
 // array aller loadouts
-_loadouts = [_ger_flecktarn_loadouts,_ger_tropentarn_loadouts];
+_loadouts = [_ger_flecktarn_loadouts,_ger_tropentarn_loadouts,_us_ocp_loadouts,_us_ucp_loadouts];
 
 
 /* 
