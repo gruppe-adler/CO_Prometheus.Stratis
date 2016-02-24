@@ -91,7 +91,7 @@ _addAction = {
 		diag_log format ["path is %1",_path];
 
 		_pathToLoadout = "loadouts\automatic_loadouts\" + _path + ".sqf";
-		[[_actionBox,"<t color=""#93E352"">" + _loadoutDescription,_pathToLoadout],"grad_addactionMP",nil,false] spawn BIS_fnc_MP;
+		[[_actionBox,"<t color=""#93E352"">" + _loadoutDescription,_pathToLoadout],"grad_addactionMP",true,false] spawn BIS_fnc_MP;
 
 	} forEach _loadoutArray;
 };
