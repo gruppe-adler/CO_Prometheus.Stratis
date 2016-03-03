@@ -55,7 +55,8 @@ ISLANDS = [
 	'vt5',
 	'Woodland_ACR',
 	'xcam_prototype',
-	'Zargabad'
+	'Zargabad',
+	'SugarLake'
 ];
 // pos blufor, pos opfor, water around map?, woodcamo, name
 ISLAND_TARGET_POSITIONS = [
@@ -84,5 +85,6 @@ ISLAND_TARGET_POSITIONS = [
 	[ [-2500,-500],[-500,-2500], false, true,'vt5'],
 	[ [7500, 7600], [7500, 7300], false, true,'Woodland_ACR'],
 	[ [4000, 4150], [4450, 3830], true, false,'xcam_prototype'],
-	[ [3400, 4320], [3400, 3600], false, false,'Zargabad']
+	[ [3400, 4320], [3400, 3600], false, false,'Zargabad'],
+	[ [7620, 7993], [7946, 7202], true, false,'SugarLake']
 ];
