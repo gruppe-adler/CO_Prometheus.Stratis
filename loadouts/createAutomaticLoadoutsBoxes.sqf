@@ -83,7 +83,7 @@ _addAction = {
 	diag_log format ["_actionTitle of 0 is %1",_actionTitle select 0];
 	diag_log format ["_loadoutArray of 0 is %1",(_loadoutArray select 0) select 1];
 
-	[[_actionBox,"<t color=""#6caacc"">" + (_actionTitle select 0),"loadouts\automatic_loadouts\hintOnlyHeadline.sqf"],"grad_addactionMP",nil,false] spawn BIS_fnc_MP;
+	[[_actionBox,"<t color=""#6caacc"">" + (_actionTitle select 0),"loadouts\automatic_loadouts\hintOnlyHeadline.sqf"],"grad_addactionMP",true,true,true]spawn BIS_fnc_MP;
 	{
 		_loadoutDescription = _x select 1;
 		_path = _x select 0;
@@ -91,7 +91,7 @@ _addAction = {
 		diag_log format ["path is %1",_path];
 
 		_pathToLoadout = "loadouts\automatic_loadouts\" + _path + ".sqf";
-		[[_actionBox,"<t color=""#93E352"">" + _loadoutDescription,_pathToLoadout],"grad_addactionMP",true,true] spawn BIS_fnc_MP;
+		[[_actionBox,"<t color=""#93E352"">" + _loadoutDescription,_pathToLoadout],"grad_addactionMP",true,true,true] spawn BIS_fnc_MP;
 
 	} forEach _loadoutArray;
 };
