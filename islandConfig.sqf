@@ -86,5 +86,5 @@ ISLAND_TARGET_POSITIONS = [
 	[ [7500, 7600], [7500, 7300], false, true,'Woodland_ACR'],
 	[ [4000, 4150], [4450, 3830], true, false,'xcam_prototype'],
 	[ [3400, 4320], [3400, 3600], false, false,'Zargabad'],
-	[ [7620, 7993], [7946, 7202], true, false,'SugarLake']
+	[ [7620, 7993], [7946, 7202], true, true,'SugarLake']
 ];
