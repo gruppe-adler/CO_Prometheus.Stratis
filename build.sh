@@ -26,6 +26,7 @@ islands=(
 	fata
 	saru
 	takistan
+	Tanoa
 	vt5
 	xcam_prototype
 	SugarLake
