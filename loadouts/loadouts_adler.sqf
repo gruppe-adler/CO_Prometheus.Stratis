@@ -51,19 +51,19 @@ if (woodland) then {
 
 
 blufor_random_primaryweapon = [
-	"SMA_HK416"
+	"arifle_SPAR_01_blk_F"
 ];
 
 set_hk416_ammo = {
 	this = _this select 0;
-	[this, "SMA_30Rnd_556x45_M855A1", 6] call addMagazinesToVest;
-	[this, "SMA_30Rnd_556x45_M855A1_Tracer", 6] call addMagazinesToBackpack;
+	[this, "30Rnd_556x45_Stanag", 6] call addMagazinesToVest;
+	[this, "30Rnd_556x45_Stanag_Tracer_Green", 6] call addMagazinesToBackpack;
 };
 
 set_hk417_ammo = {
 	this = _this select 0;
-	[this, "SMA_20Rnd_762x51mm_M80A1_EPR", 6] call addMagazinesToVest;
-	[this, "SMA_20Rnd_762x51mm_M80A1_EPR_Tracer", 6] call addMagazinesToBackpack;
+	[this, "20Rnd_762x51_Mag", 6] call addMagazinesToVest;
+	[this, "20Rnd_762x51_Mag", 6] call addMagazinesToBackpack;
 };
 
 blufor_random_mg = [
@@ -180,7 +180,7 @@ blufor_sql = {
 
 
 	this addWeapon "Binocular";
-	this addWeapon "SMA_HK416GL";
+	this addWeapon "arifle_SPAR_01_GL_blk_F";
 	this addPrimaryWeaponItem "optic_Aco";
 	this addPrimaryWeaponItem "acc_flashlight";
 	this linkItem "ItemGPS";
@@ -218,7 +218,7 @@ blufor_ftl = {
 	[this, "HandGrenade", 2] call addMagazinesToVest;
 
 	this addWeapon "Binocular";
-	this addWeapon "SMA_HK416GL";
+	this addWeapon "arifle_SPAR_01_GL_blk_F";
 	this addPrimaryWeaponItem "optic_Aco";
 	this addPrimaryWeaponItem "acc_flashlight";
 
@@ -299,7 +299,7 @@ blufor_marksman = {
 	[this, "HandGrenade", 1] call addMagazinesToVest;
 
 	this addWeapon "Binocular";
-	this addWeapon "SMA_HK417_16in_afg";
+	this addWeapon "arifle_SPAR_03_blk_F";
 	this addPrimaryWeaponItem "SMA_supp_762";
 	this addPrimaryWeaponItem "FHQ_acc_ANPEQ15_black";
 	this addPrimaryWeaponItem "optic_Hamr";
