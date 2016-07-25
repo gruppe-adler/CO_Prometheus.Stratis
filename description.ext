@@ -17,7 +17,7 @@ respawnDelay = 9999999;
 
 class Header
 {
-	gameType = Seize;
+	gameType = COOP;
 	minPlayers = 15;
 	maxPlayers = 112;
 };
