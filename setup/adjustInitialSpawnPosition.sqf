@@ -37,6 +37,6 @@ waitUntil {player == player};
 
 _tmpPos = [_targetPosition,[0,10], random 360,0,[1,50]] call SHK_pos;
 
-player setPos _tmpPos;
+player setPos [_tmpPos select 0, _tmpPos select 1, 0]; // force to ZERO height
 
 player switchmove "AmovPercMstpSnonWnonDnon";

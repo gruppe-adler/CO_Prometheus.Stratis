@@ -15,8 +15,8 @@ respawnTemplatesWest[] = {"MenuPosition"};
 class Header
 {
 	gameType = COOP;
-	minPlayers = 15;
-	maxPlayers = 112;
+	minPlayers = 1;
+	maxPlayers = 115;
 };
 
 
