@@ -2,7 +2,7 @@
 
 respawn = 3;
 respawnDialog = 0;
-respawnTemplates[] = {"Base"};
+respawnTemplatesWest[] = {"MenuPosition"};
 
 #include "dialogs\basic_defines.hpp"
 #include "dialogs\CSSA3_defines.hpp"
