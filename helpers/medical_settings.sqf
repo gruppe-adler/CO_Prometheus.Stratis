@@ -12,7 +12,7 @@ ace_medical_preventinstadeath = true; // Prevent instant death - Have a unit mov
 
 ace_medical_medicsetting_surgicalkit = 0; // Allow Surgical kit (Adv) - Who can use the surgical kit? - Anyone = 0, Medics only = 1, Doctors only (Adv) = 2
 ace_medical_consumeitem_surgicalkit = 0; // Remove Surgical kit (Adv) - Should Surgical kit be removed on usage? - No = 0, Yes - 1
-ace_medical_medicsetting = 1; // Medics setting - What is the level of detail prefered for medics? - Disable medics = 0, Normal = 1, Advanced = 2
+ace_medical_medicsetting = 2; // Medics setting - What is the level of detail prefered for medics? - Disable medics = 0, Normal = 1, Advanced = 2
 ace_medical_maxrevivetime = (60 * 5); // Max Revive time - Max amount of seconds a unit can spend in revive state
 ace_medical_medicsetting_pak = 2; // Allow PAK (Adv) - Who can use the PAK for full heal? - Anyone = 0, Medics only = 1, Doctors only (Adv) = 2
 ace_medical_allowlittercreation = true; // Enable Litter - Enable litter being created upon treatment
