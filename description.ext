@@ -6,8 +6,7 @@ onLoadMissionTime = True;
 disabledAI = 0; //1
 enableDebugConsole = 1;
 loadScreen = "pic\loading.jpg";
-respawn = 3;
-respawnDelay = 30;	//seconds
+
 
 #include "CSSA3\CSSA3_header.hpp"
 
