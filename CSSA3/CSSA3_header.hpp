@@ -2,7 +2,7 @@
 
 respawn = 3;
 respawnDialog = 0;
-respawnTemplatesWest[] = {"MenuPosition"};
+respawnTemplatesWest[] = {"Base"};
 respawnDelay = 0;	//seconds
 
 #include "dialogs\basic_defines.hpp"
