@@ -2,6 +2,8 @@
 //Part of Werthles' Headless Kit v2.3
 //Split AI Groups Evenly Among Headless Clients
 
+/* modified by nomisum to support manual excluding transferation from loop */
+
 //private variables
 private ["_recurrent", "_timeBetween", "_debug", "_advanced", "_startDelay", "_pause", "_report", "_moreBadNames", "_badNames", "_syncGroup", "_trigSyncs", "_waySyncs", "_objSyncs", "_objs", "_wayPoint", "_localCount", "_groupMoving", "_HCName", "_transfers", "_hintType", "_hintParams", "_lineString", "_breakString", "_debugString", "_hintParams1", "_hintParams2", "_stringInfo1", "_stringInfo2", "_stringInfo3", "_stringInfo4", "_strTransfers", "_strRecurrent", "_arb", "_debugging", "_check", "_hcColour", "_z", "_On", "_counts", "_HCgroups", "_null", "_recurrentCheck", "_ll", "_who", "_amount", "_gg", "_whom", "_inWHKHeadlessArray", "_headlessCount", "_unitsInGroup", "_size", "_lead", "_leadOwner", "_leadHeadless", "_WHKDummyWaypoint", "_moveToHC", "_bad", "_syncTrigArray", "_syncWayArray", "_wayNum", "_syncedTrigs", "_syncedWays", "_syncObjectsArray", "_syncObjects", "_nameOfSync", "_found", "_zz", "_HC", "_fewest", "_local", "_newSum", "_firstWaypoint", "_balanced", "_maxHC", "_minHC", "_diff", "_maxHCName", "_maxGroupCount", "_maxGroup"];
 
@@ -296,6 +298,11 @@ if (isMultiplayer) then
 										{
 											_hcColour = [113/255,198/255,113/255,0.6];
 											_On = "Player/Player-Controlled Unit";
+											if ((leader _x) getVariable ["GRAD_dontTransferToHC",false]) then {
+												
+												_hcColour = [113/255,198/255,113/255,0.6];
+												_On = "Player-Client/HC disabled";
+											};
 										};
 									}
 									else
@@ -305,6 +312,11 @@ if (isMultiplayer) then
 										{
 											_hcColour = [1,1,80/255,0.6];
 											_On = "Not On HC";
+											if ((leader _x) getVariable ["GRAD_dontTransferToHC",false]) then {
+												
+												_hcColour = [1,80/255,80/255,0.6];
+												_On = "Server/HC disabled";
+											};
 										}
 										else
 										{
@@ -609,6 +621,13 @@ if (isMultiplayer) then
 								_bad = true;
 							};
 						}forEach _badNames;
+
+						//check for unit vehicle with custom ignore phrase *nomisum*
+						{
+							if (_x getVariable ["GRAD_dontTransferToHC", false]) then {
+								_bad = true;
+							};
+						}forEach units _groupMoving;
 						
 						//move it to HC
 						if not (_bad) then
