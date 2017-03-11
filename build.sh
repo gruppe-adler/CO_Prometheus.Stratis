@@ -6,31 +6,22 @@ missionname="CO_Prometheus"
 
 islands=(
 	Altis
+	Beketov
 	Bornholm
 	Chernarus
 	Chernarus_Summer
-	FDF_Isle1_a
-	Esseker
-	Gorgona
-	IsolaDiCapraia
-	Kunduz
-	namalsk
-	Panthera3
+	Chernarus_Winter
+	fallujah
+	mbg_celle2
 	Sara_dbe1
 	Shapur_BAF
 	Stratis
-	Thirsk
 	Woodland_ACR
 	Zargabad
-	clafghan
 	fata
-	saru
 	takistan
 	Tanoa
 	vt5
-	xcam_prototype
-	SugarLake
-	pja305 # N'ziwasogo
 )
 
 ### AS AS USER, DONT EDIT BELOW THIS LINE ###
