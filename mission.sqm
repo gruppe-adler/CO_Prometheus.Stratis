@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=1;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1779.1168,82.59465,5922.0347};
-		dir[]={-0.1997184,-0.49223447,0.84726131};
-		up[]={-0.11293943,0.87045419,0.47911778};
-		aside[]={0.97333848,-3.890309e-007,0.22943687};
+		pos[]={1791.0548,13.592442,5948.5229};
+		dir[]={-0.25001028,-0.37461045,0.8928681};
+		up[]={-0.10101703,0.92717195,0.36076087};
+		aside[]={0.96298194,-4.4463377e-007,0.26964179};
 	};
 };
 binarizationWanted=0;
@@ -47,6 +47,9 @@ addons[]=
 	"ace_respawn",
 	"ace_medical",
 	"A3_Characters_F",
+	"asr_ai3_cfgcamouflage",
+	"asr_ai3_cfgvehicles",
+	"ace_nouniformrestrictions",
 	"A3_Modules_F_Curator_Curator",
 	"ace_cargo",
 	"acex_sitting",
@@ -56,20 +59,20 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=26;
+		items=27;
 		class Item0
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item1
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item2
 		{
@@ -209,30 +212,37 @@ class AddonsMetaData
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item22
+		{
+			className="ace_nouniformrestrictions";
+			name="ACE3 - No Uniform Restrictions";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item23
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
-		class Item23
+		class Item24
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item24
+		class Item25
 		{
 			className="acex_sitting";
 			name="ACEX - Sitting";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item25
+		class Item26
 		{
 			className="acex_viewrestriction";
 			name="ACEX - View Restriction";
