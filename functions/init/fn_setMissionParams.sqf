@@ -19,12 +19,12 @@ setTimeMultiplier _timeMultiplier;
 //WEATHER ======================================================================
 _overcast = ("WeatherSetting" call BIS_fnc_getParamValue) * 0.01;
 
-_mid = 0.03;
+_mid = 0.02;
 if (_overcast >= 75) then {
-    _mid = _mid + 0.08;
+    _mid = _mid + 0.07;
 };
 if (_timeOfDay <= 8) then {
-    _mid = _mid + 0.12;
+    _mid = _mid + 0.10;
 };
 _fog = random [0,_mid,0.4];
 

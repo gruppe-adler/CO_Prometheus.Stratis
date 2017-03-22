@@ -16,4 +16,4 @@ _woodland = ["woodland",true] call prometheus_fnc_getIslandCfgEntry;
 ["OPF_F", missionNamespace getVariable ["prometheus_factionLoadout"+"OPF_F",if (_woodland) then {"RuFlora"} else {"RuMedit"}]] call GRAD_Loadout_fnc_FactionSetLoadout;
 ["IND_F", missionNamespace getVariable ["prometheus_factionLoadout"+"IND_F",if (_woodland) then {"BwFleck"} else {"BwTrop"}]] call GRAD_Loadout_fnc_FactionSetLoadout;
 
-[] execVM "setup\adjustInitialSpawnPosition.sqf";
+[] execVM "adjustInitialSpawnPosition.sqf";

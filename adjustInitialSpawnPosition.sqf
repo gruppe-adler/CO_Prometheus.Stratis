@@ -1,5 +1,3 @@
-#include "..\missionMacros.h"
-
 // spawn outside of map on flat terrain if possible
 private _alternativeSpawnsOutsideMap = [[-2500,-500],[-500,-2500],[-2500,500]];
 
