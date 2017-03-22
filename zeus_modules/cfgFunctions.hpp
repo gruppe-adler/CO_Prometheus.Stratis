@@ -7,5 +7,6 @@ class prometheus_zeus {
         class diagClientModule {};
         class setLoadoutModule_apply {};
         class setLoadoutModule {};
+        class transferOwnerModule {};
     };
 };

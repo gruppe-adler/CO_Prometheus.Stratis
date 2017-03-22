@@ -105,37 +105,4 @@ if (hasInterface) then {
 
 	[] execVM "zeus_modules\initZeusModules.sqf";
 	[] execVM "helpers\intro.sqf";
-
-	/* custom snippet to make unit transfer exclusion possible via module */
-	[
-	  "GRAD_Headless",
-	  "Take Ownership",
-	  {
-	    _unit = _this select 1;
-
-		if (!isPlayer _unit) then {
-	    	{ _x setVariable ["GRAD_dontTransferToHC", true, true]; } forEach units group _unit;
-	    	[[player,group _unit],{ _owner = owner (_this select 0); (_this select 1) setGroupOwner _owner; }] remoteExec ["BIS_fnc_spawn",2];
-		};
-
-	  }
-	] call Ares_fnc_RegisterCustomModule;
-
-	[
-	  "GRAD_Headless",
-	  "Unload to HC",
-	  {
-	    _unit = _this select 1;
-
-		if (!isPlayer _unit) then {
-	    	 { _x setVariable ["GRAD_dontTransferToHC",false, true]; } forEach units group _unit;
-
-	    	 _connectedHeadlesses = entities "HeadlessClient_F";
-	    	 if (count _connectedHeadlesses > 0) then {
-	    	 		(group _unit) setGroupOwner (owner (_connectedHeadlesses select 0));
-	    	 		diag_log format ["transferring to %1", name (_connectedHeadlesses select 0)];
-	    		};
-		};
-	  }
-	] call Ares_fnc_RegisterCustomModule;
 };
