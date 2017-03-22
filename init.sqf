@@ -2,10 +2,11 @@
 #include "\z\ace\addons\main\script_macros.hpp"
 
 call compile preprocessFileLineNumbers "islandConfig.sqf";
+_woodland = (ISLAND_TARGET_POSITIONS select (ISLANDS find worldName)) select 3;
+["BLU_F", if (_woodland) then {"UsMPT"} else {"UsOCP"}] call GRAD_Loadout_fnc_FactionSetLoadout;
+["OPF_F", if (_woodland) then {"RuFlora"} else {"RuMedit"}] call GRAD_Loadout_fnc_FactionSetLoadout;
+["IND_F", if (_woodland) then {"BwFleck"} else {"BwTrop"}] call GRAD_Loadout_fnc_FactionSetLoadout;
 
-// wait for which camo will be used
-waitUntil {!isNil "ISLAND_TARGET_POSITIONS"};
-woodland = (ISLAND_TARGET_POSITIONS select (ISLANDS find worldName)) select 3;
 
 // read parameters
 TIME_OF_DAY = paramsArray select 0;
@@ -81,7 +82,6 @@ if (isServer) then {
 
  			if (!isPlayer _x) then {
 	 			sleep 0.2;
-	 			[_x] execVM "loadouts\_client.sqf";
 				0 = [_x] execVM "setup\adjustInitialSpawnPositionAI.sqf";
  			};
 
@@ -103,10 +103,7 @@ clearInventory = compile preprocessFile "helpers\clearInventory.sqf";
 if (hasInterface) then {
 	["InitializePlayer", [player]] call BIS_fnc_dynamicGroups;
 
-
-
 	[] execVM "zeus_modules\initZeusModules.sqf";
-	[player] execVM "loadouts\_client.sqf"; diag_log format ["setup: loadout %1 initiated",player];
 	[] execVM "helpers\intro.sqf";
 
 	/* custom snippet to make unit transfer exclusion possible via module */

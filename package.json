@@ -1,0 +1,18 @@
+{
+    "name": "grad-co-prometheus",
+    "description": "Zeus mission template for all maps",
+    "version": "0.3.0",
+    "contributors": [
+        {
+            "name": "nomisum"
+        },
+        {
+            "name": "McDiod"
+        }
+    ],
+
+    "dependencies": {
+        "grad-loadout": ">=4.5.0",
+        "grad-factions": ">0.1.1"
+    }
+}

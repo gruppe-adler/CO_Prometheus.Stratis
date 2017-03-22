@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1791.0548,13.592442,5948.5229};
-		dir[]={-0.25001028,-0.37461045,0.8928681};
-		up[]={-0.10101703,0.92717195,0.36076087};
-		aside[]={0.96298194,-4.4463377e-007,0.26964179};
+		pos[]={1583.8344,180.1985,5039.4443};
+		dir[]={0.29125834,-0.46693411,0.83499503};
+		up[]={0.15379493,0.88427317,0.4409121};
+		aside[]={0.94423825,-3.0780211e-007,-0.32936543};
 	};
 };
 binarizationWanted=0;
@@ -52,14 +52,13 @@ addons[]=
 	"ace_nouniformrestrictions",
 	"A3_Modules_F_Curator_Curator",
 	"ace_cargo",
-	"acex_sitting",
-	"acex_viewrestriction"
+	"acex_sitting"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=27;
+		items=26;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -242,13 +241,6 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item26
-		{
-			className="acex_viewrestriction";
-			name="ACEX - View Restriction";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
 	};
 };
 randomSeed=5319570;
@@ -281,7 +273,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=63;
+		items=62;
 		class Item0
 		{
 			dataType="Marker";
@@ -6333,116 +6325,6 @@ class Mission
 			};
 		};
 		class Item61
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={1585.902,-0.078029633,6102.7271};
-			};
-			id=177;
-			type="acex_viewrestriction_Module";
-			atlOffset=26.330999;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="acex_viewrestriction_Module_modeSelectiveAir";
-					expression="_this setVariable ['modeSelectiveAir',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="acex_viewrestriction_Module_modeSelectiveLand";
-					expression="_this setVariable ['modeSelectiveLand',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="acex_viewrestriction_Module_modeSelectiveFoot";
-					expression="_this setVariable ['modeSelectiveFoot',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="acex_viewrestriction_Module_modeSelectiveSea";
-					expression="_this setVariable ['modeSelectiveSea',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="acex_viewrestriction_Module_mode";
-					expression="_this setVariable ['mode',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=5;
-			};
-		};
-		class Item62
 		{
 			dataType="Logic";
 			class PositionInfo

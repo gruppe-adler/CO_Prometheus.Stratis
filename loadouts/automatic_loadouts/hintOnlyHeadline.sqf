@@ -1,1 +1,0 @@
-hintSilent format ["This is only the headline"];

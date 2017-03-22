@@ -1,3 +1,12 @@
+#define MODULES_DIRECTORY node_modules
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 115;
+};
+
 OnLoadMission = "Zeus Template for all maps";
 author = "Nomisum für Gruppe Adler";  //appears as author in overview and loading screen
 overviewText = "Zeus Template"; //appears in overview and loading screen
@@ -10,132 +19,21 @@ loadScreen = "pic\loading.jpg";
 
 
 #include "CSSA3\CSSA3_header.hpp"
-
-class Header
-{
-	gameType = COOP;
-	minPlayers = 1;
-	maxPlayers = 115;
-};
+#include "cfgParams.hpp"
+#include "cfgUnitInsignia.hpp"
 
 
 class CfgFunctions {
 	#include "zeus_modules\cfgFunctions.hpp"
+	#include "node_modules\grad-loadout\cfgFunctions.hpp"
 };
 
-class Params
-{
-	class TimeOfDay
-	{
-		title = "Time of Day";
-		values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23};
-		texts[] = {"00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00"};
-		default = 8;
-	};
+class Loadouts {
+    baseDelay = 1;
+    handleRadios = 1;
+    resetLoadout = 0;
 
-	class WeatherSetting
-    {
-		title = "Weather Settings";
-		values[] = {0,1,2,3};
-		texts[] = {"SUNNY DAY","RAINY DAY","CLOUDY DAY","RANDOM WEATHER"};
-		default = 0;
+    class Faction {
+        #include "node_modules\grad-factions\loadouts.hpp"
     };
-
-
-	class Zeitbeschleunigung
-	{
-		title = "Time Acceleration";
-		values[] = {1,2,4};
-		texts[] = {"normal","2h in 1h","4h in 1h"};
-		default = 1;
-	};
-
-
-
-	class EnableReplay
-	{
-		title = "enable replay";
-		values[] = {false, true};
-		texts[] = {"no", "yes"};
-		default = false;
-		isGlobal = 0;
-	};
-
-	class IsStreamable
-	{
-		title = "enable live stream (needs 'enable replay')";
-		values[] = {false, true};
-		texts[] = {"no","yes"};
-		default = 0;
-		isGlobal = 0;
-	};
-
-	class Debug_Mode
-	{
-		title = "Enable Debug Log";
-		values[] = {0, 1};
-		texts[] = {"no","yes"};
-		default = 0;
-	};
-
-	class HC_enabled
-	{
-		title = "Enable HC";
-		values[] = {0, 1};
-		texts[] = {"no","yes"};
-		default = 1;
-	};
-
-
-};
-
-class CfgUnitInsignia
-{
-	class grad_command
-	{
-		displayName = "GRAD Command"; // Name displayed in Arsenal
-		author = "Gruppe Adler"; // Author displayed in Arsenal
-		texture = "pic\insignia_command.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-
-	class grad_alpha
-	{
-		displayName = "GRAD Alpha"; // Name displayed in Arsenal
-		author = "Gruppe Adler"; // Author displayed in Arsenal
-		texture = "pic\insignia_alpha.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-
-	class grad_bravo
-	{
-		displayName = "GRAD Bravo"; // Name displayed in Arsenal
-		author = "Gruppe Adler"; // Author displayed in Arsenal
-		texture = "pic\insignia_bravo.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-
-	class grad_charlie
-	{
-		displayName = "GRAD Charlie"; // Name displayed in Arsenal
-		author = "Gruppe Adler"; // Author displayed in Arsenal
-		texture = "pic\insignia_charlie.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-
-	class grad_delta
-	{
-		displayName = "GRAD Delta"; // Name displayed in Arsenal
-		author = "Gruppe Adler"; // Author displayed in Arsenal
-		texture = "pic\insignia_delta.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-
-	class grad_heli
-	{
-		displayName = "GRAD Heli"; // Name displayed in Arsenal
-		author = "Gruppe Adler"; // Author displayed in Arsenal
-		texture = "pic\insignia_heli.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
 };
