@@ -16,8 +16,8 @@ AR3PLAY_IS_STREAMABLE = (paramsArray select 4) == 1;
 DEBUG = (paramsArray select 5) == 1;
 
 setCustomWeather = {
-	skipTime -24; 
-	0 setOvercast (_this select 0); 
+	skipTime -24;
+	0 setOvercast (_this select 0);
 	setViewDistance 5000;
 	skipTime 24;
 };
@@ -62,29 +62,29 @@ if ((paramsArray select 6) == 1) then {
 if (isServer) then {
 
 	["Initialize"] call BIS_fnc_dynamicGroups;
-	
+
 	// set to full moon date
 	setDate [2015, 2, 2, TIME_OF_DAY, 1];
 	// set time acceleration
 	setTimeMultiplier TIME_ACCELERATION;
 
-	
-	
+
+
 	if (isClass (configFile >> "CfgPatches" >> "task_force_radio")) then {
 		[] execVM "tfarsettings.sqf";
 	};
-	
+
  	[] execVM "helpers\medical_settings.sqf";
 
  	[] spawn {
  		{
- 		
+
  			if (!isPlayer _x) then {
-	 			sleep 0.2; 
+	 			sleep 0.2;
 	 			[_x] execVM "loadouts\_client.sqf";
-				0 = [_x] execVM "setup\adjustInitialSpawnPositionAI.sqf";	
+				0 = [_x] execVM "setup\adjustInitialSpawnPositionAI.sqf";
  			};
- 		
+
  		} forEach allUnits;
  	};
 };
@@ -98,14 +98,14 @@ call compile preprocessfile "SHK_pos\shk_pos_init.sqf";
 
 clearInventory = compile preprocessFile "helpers\clearInventory.sqf";
 
-[] execVM "setup\adjustInitialSpawnPosition.sqf"; diag_log format ["setup: initial spawn position initiated"];	
+[] execVM "setup\adjustInitialSpawnPosition.sqf"; diag_log format ["setup: initial spawn position initiated"];
 
 if (hasInterface) then {
 	["InitializePlayer", [player]] call BIS_fnc_dynamicGroups;
-	
 
-	
 
+
+	[] execVM "zeus_modules\initZeusModules.sqf";
 	[player] execVM "loadouts\_client.sqf"; diag_log format ["setup: loadout %1 initiated",player];
 	[] execVM "helpers\intro.sqf";
 
@@ -115,12 +115,12 @@ if (hasInterface) then {
 	  "Take Ownership",
 	  {
 	    _unit = _this select 1;
-		
+
 		if (!isPlayer _unit) then {
 	    	{ _x setVariable ["GRAD_dontTransferToHC", true, true]; } forEach units group _unit;
 	    	[[player,group _unit],{ _owner = owner (_this select 0); (_this select 1) setGroupOwner _owner; }] remoteExec ["BIS_fnc_spawn",2];
 		};
-	 
+
 	  }
 	] call Ares_fnc_RegisterCustomModule;
 
@@ -129,7 +129,7 @@ if (hasInterface) then {
 	  "Unload to HC",
 	  {
 	    _unit = _this select 1;
-		
+
 		if (!isPlayer _unit) then {
 	    	 { _x setVariable ["GRAD_dontTransferToHC",false, true]; } forEach units group _unit;
 

@@ -5,6 +5,7 @@ onLoadName = "Prometheus"; //mission name for loading screen only
 onLoadMissionTime = True;
 disabledAI = 0; //1
 enableDebugConsole = 1;
+allowFunctionsRecompile = 1;
 loadScreen = "pic\loading.jpg";
 
 
@@ -17,6 +18,10 @@ class Header
 	maxPlayers = 115;
 };
 
+
+class CfgFunctions {
+	#include "zeus_modules\cfgFunctions.hpp"
+};
 
 class Params
 {
@@ -45,7 +50,7 @@ class Params
 		default = 1;
 	};
 
-	
+
 
 	class EnableReplay
 	{
@@ -64,7 +69,7 @@ class Params
 		default = 0;
 		isGlobal = 0;
 	};
-	
+
 	class Debug_Mode
 	{
 		title = "Enable Debug Log";
