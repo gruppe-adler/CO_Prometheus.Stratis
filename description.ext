@@ -17,13 +17,13 @@ enableDebugConsole = 1;
 allowFunctionsRecompile = 1;
 loadScreen = "pic\loading.jpg";
 
-
 #include "CSSA3\CSSA3_header.hpp"
 #include "cfgParams.hpp"
 #include "cfgUnitInsignia.hpp"
-
+#include "cfgIslands.hpp"
 
 class CfgFunctions {
+	#include "functions\cfgFunctions.hpp"
 	#include "zeus_modules\cfgFunctions.hpp"
 	#include "node_modules\grad-loadout\cfgFunctions.hpp"
 };

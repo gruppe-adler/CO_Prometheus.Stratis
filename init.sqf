@@ -1,8 +1,7 @@
 #include "\z\ace\addons\main\script_component.hpp"
 #include "\z\ace\addons\main\script_macros.hpp"
 
-call compile preprocessFileLineNumbers "islandConfig.sqf";
-_woodland = (ISLAND_TARGET_POSITIONS select (ISLANDS find worldName)) select 3;
+_woodland = ["woodland",true] call prometheus_fnc_getIslandCfgEntry;
 ["BLU_F", if (_woodland) then {"UsMPT"} else {"UsOCP"}] call GRAD_Loadout_fnc_FactionSetLoadout;
 ["OPF_F", if (_woodland) then {"RuFlora"} else {"RuMedit"}] call GRAD_Loadout_fnc_FactionSetLoadout;
 ["IND_F", if (_woodland) then {"BwFleck"} else {"BwTrop"}] call GRAD_Loadout_fnc_FactionSetLoadout;
@@ -76,17 +75,6 @@ if (isServer) then {
 	};
 
  	[] execVM "helpers\medical_settings.sqf";
-
- 	[] spawn {
- 		{
-
- 			if (!isPlayer _x) then {
-	 			sleep 0.2;
-				0 = [_x] execVM "setup\adjustInitialSpawnPositionAI.sqf";
- 			};
-
- 		} forEach allUnits;
- 	};
 };
 
 diag_log format ["setup: server done"];
@@ -98,11 +86,4 @@ call compile preprocessfile "SHK_pos\shk_pos_init.sqf";
 
 clearInventory = compile preprocessFile "helpers\clearInventory.sqf";
 
-[] execVM "setup\adjustInitialSpawnPosition.sqf"; diag_log format ["setup: initial spawn position initiated"];
-
-if (hasInterface) then {
-	["InitializePlayer", [player]] call BIS_fnc_dynamicGroups;
-
-	[] execVM "zeus_modules\initZeusModules.sqf";
-	[] execVM "helpers\intro.sqf";
-};
+[] execVM "setup\adjustInitialSpawnPosition.sqf";
