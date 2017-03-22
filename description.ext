@@ -28,6 +28,15 @@ class CfgFunctions {
 	#include "node_modules\grad-loadout\cfgFunctions.hpp"
 };
 
+class RscTitles {
+    class prometheus_Default {
+        idd = -1;
+        fadein = 0;
+        fadeout = 0;
+        duration = 0;
+    };
+};
+
 class Loadouts {
     baseDelay = 1;
     handleRadios = 1;
