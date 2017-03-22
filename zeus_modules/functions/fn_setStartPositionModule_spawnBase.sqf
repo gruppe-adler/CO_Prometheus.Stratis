@@ -65,8 +65,4 @@ _camp_stuhl3 setPos (_camp_cutter_1 modelToWorld [-4.9,7.2,0]);
 _camp_stuhl3 setDir (_pos_dir) +10;
 _camp_stuhl3 allowDamage false;
 
-_light0 = "#lightpoint" createVehicle (_pos);
-_light0 setLightColor[1, 1, 0.3];
-_light0 setLightBrightness 0.25;
-_light0 setLightAmbient [0.09,0.09,0.09];
-_light0 lightAttachObject [_camp_zelt_1, [2,-1,1.5]];
+[_pos,[1, 1, 0.3],0.25,[0.09,0.09,0.09],_camp_zelt_1,[2,-1,1.5]] remoteExec ["prometheus_fnc_spawnLightPoint",0,false];

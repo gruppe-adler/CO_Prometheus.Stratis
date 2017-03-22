@@ -1,6 +1,7 @@
 class prometheus {
     class common {
         class getIslandCfgEntry {};
+        class spawnLightPoint {};
         class teleport {};
     };
     class init {
