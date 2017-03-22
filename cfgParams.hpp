@@ -10,10 +10,10 @@ class Params
 
 	class WeatherSetting
     {
-		title = "Weather Settings";
-		values[] = {0,1,2,3};
-		texts[] = {"SUNNY DAY","RAINY DAY","CLOUDY DAY","RANDOM WEATHER"};
-		default = 0;
+		title = "Weather";
+        values[] = {-1,0,25,50,75,100};
+        texts[] = {"Random","Clear","Cloudy","Overcast","Rainy","Stormy"};
+        default = 0;
     };
 
 
@@ -25,39 +25,38 @@ class Params
 		default = 1;
 	};
 
-
-
-	class EnableReplay
+	//THESE WERE NOT IN USE
+	/*class EnableReplay
 	{
 		title = "enable replay";
 		values[] = {false, true};
 		texts[] = {"no", "yes"};
 		default = false;
 		isGlobal = 0;
-	};
+	};*/
 
-	class IsStreamable
+	/*class IsStreamable
 	{
 		title = "enable live stream (needs 'enable replay')";
 		values[] = {false, true};
 		texts[] = {"no","yes"};
 		default = 0;
 		isGlobal = 0;
-	};
+	};*/
 
-	class Debug_Mode
+	/*class Debug_Mode
 	{
 		title = "Enable Debug Log";
 		values[] = {0, 1};
 		texts[] = {"no","yes"};
 		default = 0;
-	};
+	};*/
 
 	class HC_enabled
 	{
 		title = "Enable HC";
 		values[] = {0, 1};
 		texts[] = {"no","yes"};
-		default = 1;
+		default = 0;
 	};
 };
