@@ -1,6 +1,7 @@
 class prometheus {
     class common {
         class getIslandCfgEntry {};
+        class teleport {};
     };
     class init {
         class initHeadless {};

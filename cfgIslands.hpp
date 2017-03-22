@@ -170,6 +170,7 @@ class CfgIslands {
 	class Stratis {
         startPosBlu[] = {1540, 5015};
         startPosOpf[] = {1800, 6000};
+		startPosInd[] = {1672, 5471};
         waterAroundMap = true;
         woodland = true;
         displayName = 'Stratis';

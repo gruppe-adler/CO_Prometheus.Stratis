@@ -1,4 +1,4 @@
-params ["_position","_selObject"];
+params ["_position",["_selObject",objNull]];
 
 private _sides = [WEST,EAST,INDEPENDENT,CIVILIAN];
 private _sideStr = _sides apply {str _x};

@@ -1,7 +1,5 @@
 #include "..\missionMacros.h"
 
-diag_log format ["setup: initial spawn position initiated"];
-
 // spawn outside of map on flat terrain if possible
 private _alternativeSpawnsOutsideMap = [[-2500,-500],[-500,-2500],[-2500,500]];
 
@@ -16,25 +14,22 @@ private _playerPositionsForCurrentWorld = if !(_waterAroundMap) then {
 	]
 };
 
-_targetPosition = switch (playerSide) do {
-	case (EAST): {_playerPositionsForCurrentWorld select 0};
-	case (INDEPENDENT): {_playerPositionsForCurrentWorld select 2};
-	default {_playerPositionsForCurrentWorld select 1};
-};
+//overwrite with zeus-set positions
+if (!isNil "prometheus_startPosOpf") then {_playerPositionsForCurrentWorld set [0,prometheus_startPosOpf]};
+if (!isNil "prometheus_startPosBlu") then {_playerPositionsForCurrentWorld set [1,prometheus_startPosBlu]};
+if (!isNil "prometheus_startPosInd") then {_playerPositionsForCurrentWorld set [2,prometheus_startPosInd]};
 
 
 if (isServer) then {
 	_targetPosition= _playerPositionsForCurrentWorld select 0;
-	_tmpPos_arsenal_1 = [_targetPosition,[0,10], random 360,0,[5,80]] call SHK_pos;
-	arsenal_1 setPos _tmpPos_arsenal_1;
+	"respawn_east" setMarkerPos _targetPosition;
 
 	_targetPosition= _playerPositionsForCurrentWorld select 1;
-	_tmpPos_arsenal_2 = [_targetPosition,[0,10], random 360,0,[5,80]] call SHK_pos;
-	arsenal_2 setPos _tmpPos_arsenal_2;
+	"respawn_west" setMarkerPos _targetPosition;
+	"respawn_civilian" setMarkerPos _targetPosition;
 
 	_targetPosition= _playerPositionsForCurrentWorld select 2;
-	_tmpPos_arsenal_3 = [_targetPosition,[0,10], random 360,0,[5,80]] call SHK_pos;
-	arsenal_3 setPos _tmpPos_arsenal_3;
+	"respawn_guerrila" setMarkerPos _targetPosition;
 
 	[_playerPositionsForCurrentWorld] spawn {
 		params ["_playerPositionsForCurrentWorld"];
@@ -57,11 +52,21 @@ if (isServer) then {
  	};
 };
 
-if (!hasInterface) exitWith {};
 
+
+if (!hasInterface) exitWith {};
 [{!isNull player}, {
-	params ["_targetPosition"];
+	params ["_playerPositionsForCurrentWorld"];
+
+	_targetPosition = switch (playerSide) do {
+		case (EAST): {_playerPositionsForCurrentWorld select 0};
+		case (INDEPENDENT): {_playerPositionsForCurrentWorld select 2};
+		default {_playerPositionsForCurrentWorld select 1};
+	};
+
+	diag_log format ["kjasdkjhasjkhd %1",_targetPosition];
+
 	_tmpPos = [_targetPosition,[0,10], random 360,0,[1,50]] call SHK_pos;
 	player setPos [_tmpPos select 0, _tmpPos select 1, 0]; // force to ZERO height
 	player switchmove "AmovPercMstpSnonWnonDnon";
-}, [_targetPosition]] call CBA_fnc_waitUntilAndExecute;
+}, [_playerPositionsForCurrentWorld]] call CBA_fnc_waitUntilAndExecute;
