@@ -35,7 +35,8 @@ switch (_selSide) do {
 };
 
 //spawn base
-if (_spawnBase) then {[_position,0] remoteExec ["prometheus_zeus_fnc_setStartPositionModule_spawnBase",2,false]};
+if (_spawnBase) then {[_position,0,_spawnArsenal] remoteExec ["prometheus_zeus_fnc_setStartPositionModule_spawnBase",2,false]};
+if (!_spawnBase && _spawnArsenal) then {[_position] remoteExec ["prometheus_zeus_fnc_setStartPositionModule_spawnArsenal",2,false]};
 
 //teleport units
 {

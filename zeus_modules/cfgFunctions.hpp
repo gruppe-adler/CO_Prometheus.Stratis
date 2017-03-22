@@ -9,6 +9,7 @@ class prometheus_zeus {
         class endMissionEffectModule {};
         class setLoadoutModule_apply {};
         class setLoadoutModule {};
+        class setStartPositionModule_spawnArsenal {};
         class setStartPositionModule_spawnBase {};
         class setStartPositionModule {};
         class transferOwnerModule {};

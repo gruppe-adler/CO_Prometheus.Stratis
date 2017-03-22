@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=554;
+		nextID=555;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1312.9122,189.18806,5018.9082};
-		dir[]={0.769889,-0.43579879,0.46623075};
-		up[]={0.37277961,0.90003991,0.22574824};
-		aside[]={0.51800567,-2.1443702e-007,-0.85538775};
+		pos[]={1459.0806,257.26813,5026.9517};
+		dir[]={-0.51083857,-0.40676552,-0.75737327};
+		up[]={-0.22746029,0.91352874,-0.33723363};
+		aside[]={-0.82905602,-3.722962e-007,0.55918962};
 	};
 };
 binarizationWanted=0;
@@ -15199,11 +15199,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={298.25845,-126.85547,401.33203};
+				position[]={298.258,-126.85545,401.332};
 			};
 			id=551;
 			type="ace_weather_ModuleSettings";
-			atlOffset=17.448944;
+			atlOffset=17.448997;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15221,7 +15221,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
