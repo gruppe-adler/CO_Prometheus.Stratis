@@ -8,7 +8,7 @@ private _loadoutsStr = _loadouts apply {configName _x};
 
 private _result = ["Loadouts festlegen",
 [
-    ["Seite", _sideStr, _defaultSide],
+    ["Seite", _sideStr, _defaultSide, true],
     ["Loadout", _loadoutsStr, 0]
 ]] call Ares_fnc_showChooseDialog;
 
@@ -19,4 +19,5 @@ private _selSide = _sides select _sideID;
 private _sidePrefix = ["BLU_F","OPF_F","IND_F","CIV_F"] select _sideID;
 private _selLoadout = _loadoutsStr select _loadoutID;
 
-[_sidePrefix, _selLoadout] remoteExec ["prometheus_zeus_fnc_setLoadoutModule_apply",0,true];
+missionNamespace setVariable ["prometheus_factionLoadout"+_sidePrefix,_selLoadout,true];
+[_sidePrefix, _selLoadout] remoteExec ["prometheus_zeus_fnc_setLoadoutModule_apply",0,false];
