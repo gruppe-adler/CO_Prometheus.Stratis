@@ -2,15 +2,11 @@
 private _alternativeSpawnsOutsideMap = [[-2500,-500],[-500,-2500],[-2500,500]];
 
 private _waterAroundMap = ["waterAroundMap",false] call prometheus_fnc_getIslandCfgEntry;
-private _playerPositionsForCurrentWorld = if !(_waterAroundMap) then {
-	_alternativeSpawnsOutsideMap
-} else {
-	[
-		["startPosOpf",[0,0,0]] call prometheus_fnc_getIslandCfgEntry,
-		["startPosBlu",[0,0,0]] call prometheus_fnc_getIslandCfgEntry,
-		["startPosInd",[0,0,0]] call prometheus_fnc_getIslandCfgEntry
-	]
-};
+private _playerPositionsForCurrentWorld = 	[
+	["startPosOpf",[0,0,0]] call prometheus_fnc_getIslandCfgEntry,
+	["startPosBlu",[0,0,0]] call prometheus_fnc_getIslandCfgEntry,
+	["startPosInd",[0,0,0]] call prometheus_fnc_getIslandCfgEntry
+];
 
 //overwrite with zeus-set positions
 if (!isNil "prometheus_startPosOpf") then {_playerPositionsForCurrentWorld set [0,prometheus_startPosOpf]};
@@ -61,8 +57,6 @@ if (!hasInterface) exitWith {};
 		case (INDEPENDENT): {_playerPositionsForCurrentWorld select 2};
 		default {_playerPositionsForCurrentWorld select 1};
 	};
-
-	diag_log format ["kjasdkjhasjkhd %1",_targetPosition];
 
 	_tmpPos = [_targetPosition,[0,10], random 360,0,[1,50]] call SHK_pos;
 	player setPos [_tmpPos select 0, _tmpPos select 1, 0]; // force to ZERO height

@@ -4,7 +4,27 @@
 cpbo_path="$1"
 missionname="CO_Prometheus"
 
-islands=`cat compatibleIslands.txt`
+islands=(
+	Altis
+	Beketov
+	Bootcamp_ACR
+	Chernarus
+	Chernarus_Summer
+	Chernarus_Winter
+	fallujah
+	Kunduz
+	mbg_celle2
+	ProvingGrounds_PMC
+	Sara_dbe1
+	Shapur_BAF
+	Stratis
+	Woodland_ACR
+	Zargabad
+	fata
+	takistan
+	Tanoa
+	vt5
+)
 
 ### AS AS USER, DONT EDIT BELOW THIS LINE ###
 
@@ -50,10 +70,10 @@ tmpdir="$builddir/tmpdir"
 cp -r ./ "$tmpdir"
 rm "$tmpdir/build.sh"
 rm "$tmpdir/cpbo.exe"
+rm "$tmpdir/copy3denMouseOverPos.sqf"
 rm -fr "$tmpdir/.git"
 rm "$tmpdir/.gitattributes"
 rm "$tmpdir/.gitignore"
-rm "$tmpdir/mission.sqm.oldBackup"
 
 echo "building PBO...";
 $cpbo_path -y -p "$tmpdir" > /dev/null

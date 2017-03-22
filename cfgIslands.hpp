@@ -1,14 +1,16 @@
 class CfgIslands {
 	class Altis {
-        startPosBlu[] = {14300,16200};
-        startPosOpf[] = {14600, 16700};
+		startPosBlu[] = {14185, 15953};
+		startPosOpf[] = {14251, 16018};
+		startPosInd[] = {14314, 16097};
         waterAroundMap = true;
         woodland = true;
         displayName =  'Altis';
     };
 	class Beketov {
-        startPosBlu[] = {400, -400};
-        startPosOpf[] = {1000, -400};
+		startPosBlu[] = {-746, -1014};
+        startPosOpf[] = {382, -1058};
+        startPosInd[] = {1282, -1181};
         waterAroundMap = false;
         woodland = true;
         displayName = 'Beketov';
@@ -21,25 +23,36 @@ class CfgIslands {
         displayName =  'Bornholm';
     };
 	class Bootcamp_ACR {
-        startPosBlu[] = {-2500,-500};
-        startPosOpf[] = {-500,-2500};
+        startPosBlu[] = {-649, -569};
+		startPosOpf[] = {-299, -507};
+		startPosInd[] = {105, -507};
         waterAroundMap = false;
         woodland = true;
         displayName =  'Bootcamp_ACR';
     };
 	class Chernarus {
-        startPosBlu[] = {4100,11000};
-        startPosOpf[] = {4860, 9740};
-        waterAroundMap = true;
+        startPosBlu[] = {-457, 928};
+		startPosOpf[] = {-351, 1176};
+		startPosInd[] = {-168, 1471};
+        waterAroundMap = false;
         woodland = true;
         displayName = 'Chernarus';
     };
 	class Chernarus_Summer {
-        startPosBlu[] = {4100,11000};
-        startPosOpf[] = {4860, 9740};
-        waterAroundMap = true;
+		startPosBlu[] = {-457, 928};
+		startPosOpf[] = {-351, 1176};
+		startPosInd[] = {-168, 1471};
+        waterAroundMap = false;
         woodland = true;
         displayName = 'Chernarus_Summer';
+    };
+	class Chernarus_Winter {
+		startPosBlu[] = {-457, 928};
+		startPosOpf[] = {-351, 1176};
+		startPosInd[] = {-168, 1471};
+        waterAroundMap = false;
+        woodland = true;
+        displayName = 'Chernarus_Winter';
     };
 	class clafghan {
         startPosBlu[] = {15550,920};
@@ -63,15 +76,17 @@ class CfgIslands {
         displayName = 'Esseker';
     };
 	class fata {
-        startPosBlu[] = {7700, 1600};
-        startPosOpf[] = {8400, 2000};
+        startPosBlu[] = {-40, -237};
+		startPosOpf[] = {542, -209};
+		startPosInd[] = {885, -180};
         waterAroundMap = false;
         woodland = false;
         displayName = 'fata';
     };
 	class fallujah {
-        startPosBlu[] = {7972, 2184};
-        startPosOpf[] = {8420, 1370};
+        startPosBlu[] = {-251, -199};
+		startPosOpf[] = {238, -198};
+		startPosInd[] = {673, -198};
         waterAroundMap = false;
         woodland = false;
         displayName = 'fallujah';
@@ -112,8 +127,9 @@ class CfgIslands {
         displayName = 'pja305';
     };
 	class mbg_celle2 {
-        startPosBlu[] = {7200,1150};
-        startPosOpf[] = {7900,1270};
+        startPosBlu[] = {-933, -2975};
+		startPosOpf[] = {312, -2694};
+		startPosInd[] = {1490, -2675};
         waterAroundMap = false;
         woodland = true;
         displayName =  'mbg_celle2';
@@ -126,8 +142,9 @@ class CfgIslands {
         displayName =  'namalsk';
     };
 	class ProvingGrounds_PMC {
-        startPosBlu[] = {-2500,-500};
-        startPosOpf[] = {-500,-2500};
+        startPosBlu[] = {-285, -173};
+		startPosOpf[] = {188, -242};
+		startPosInd[] = {605, -276};
         waterAroundMap = false;
         woodland = true;
         displayName =  'ProvingGrounds_PMC';
@@ -140,8 +157,9 @@ class CfgIslands {
         displayName = 'Sara';
     };
 	class Sara_dbe1 {
-        startPosBlu[] = {18080, 18535};
-        startPosOpf[] = {18200, 18060};
+        startPosBlu[] = {9304, 10078};
+		startPosOpf[] = {9404, 10082};
+		startPosInd[] = {9546, 10080};
         waterAroundMap = true;
         woodland = false;
         displayName = 'Sara_dbe1';
@@ -154,8 +172,9 @@ class CfgIslands {
         displayName = 'saru';
     };
 	class Shapur_BAF {
-        startPosBlu[] = {160, 640};
-        startPosOpf[] = {800, 135};
+        startPosBlu[] = {-300, -491};
+		startPosOpf[] = {506, -649};
+		startPosInd[] = {1194, -636};
         waterAroundMap = true;
         woodland = false;
         displayName = 'Shapur_BAF';
@@ -176,15 +195,17 @@ class CfgIslands {
         displayName = 'Stratis';
     };
 	class takistan {
-        startPosBlu[] = {7700, 1600};
-        startPosOpf[] = {8250, 2130};
+        startPosBlu[] = {617, -881};
+		startPosOpf[] = {1373, -864};
+		startPosInd[] = {2380, -808};
         waterAroundMap = false;
         woodland = false;
         displayName = 'takistan';
     };
 	class Tanoa {
-        startPosBlu[] = {1916, 3453};
-        startPosOpf[] = {2468,3621};
+        startPosBlu[] = {11603, 3125};
+		startPosOpf[] = {11469, 3226};
+		startPosInd[] = {11333, 3330};
         waterAroundMap = true;
         woodland = true;
         displayName = 'Tanoa';
@@ -211,15 +232,17 @@ class CfgIslands {
         displayName = 'Panthera3';
     };
 	class vt5 {
-        startPosBlu[] = {-2500,-500};
-        startPosOpf[] = {-500,-2500};
+        startPosBlu[] = {-295, -427};
+		startPosOpf[] = {544, -418};
+		startPosInd[] = {1188, -409};
         waterAroundMap = false;
         woodland = true;
         displayName = 'vt5';
     };
 	class Woodland_ACR {
-        startPosBlu[] = {7500, 7600};
-        startPosOpf[] = {7500, 7300};
+        startPosBlu[] = {-1104, 163};
+		startPosOpf[] = {-726, 815};
+		startPosInd[] = {-278, 1671};
         waterAroundMap = false;
         woodland = true;
         displayName = 'Woodland_ACR';
@@ -232,8 +255,9 @@ class CfgIslands {
         displayName = 'xcam_prototype';
     };
 	class Zargabad {
-        startPosBlu[] = {3400, 4320};
-        startPosOpf[] = {3400, 3600};
+        startPosBlu[] = {1059, -509};
+		startPosOpf[] = {1996, -510};
+		startPosInd[] = {3009, -552};
         waterAroundMap = false;
         woodland = false;
         displayName = 'Zargabad';

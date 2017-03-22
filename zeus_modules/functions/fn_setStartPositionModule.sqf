@@ -35,8 +35,6 @@ switch (_selSide) do {
 };
 
 //spawn base
-systemChat str _spawnBase;
-systemChat str _position;
 if (_spawnBase) then {[_position,0] remoteExec ["prometheus_zeus_fnc_setStartPositionModule_spawnBase",2,false]};
 
 //teleport units
