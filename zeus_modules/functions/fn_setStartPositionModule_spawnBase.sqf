@@ -48,6 +48,7 @@ clearWeaponCargoGlobal _camp_kiste_2;
 _camp_tisch_1 = "Land_CampingTable_F" createVehicle (_pos);
 _camp_tisch_1 setPos (_camp_cutter_1 modelToWorld [-4.5,6,0]);
 _camp_tisch_1 setDir (_pos_dir);
+_camp_tisch_1 enableSimulationGlobal false;
 _camp_tisch_1 allowDamage false;
 
 _camp_stuhl1 = "Land_CampingChair_V2_F" createVehicle (_pos);
@@ -64,5 +65,12 @@ _camp_stuhl3 = "Land_CampingChair_V2_F" createVehicle (_pos);
 _camp_stuhl3 setPos (_camp_cutter_1 modelToWorld [-4.9,7.2,0]);
 _camp_stuhl3 setDir (_pos_dir) +10;
 _camp_stuhl3 allowDamage false;
+
+_camp_laptop = "Land_Laptop_unfolded_scripted_F" createVehicle (_pos);
+_camp_laptop setDir (_pos_dir+180);
+_camp_laptop setPos (_camp_tisch_1 modelToWorld [0,0,0.40]);
+_camp_laptop allowDamage false;
+_camp_laptop enableSimulationGlobal false;
+[_camp_laptop,["Nachricht an Zeus schicken","createDialog 'prometheus_messageZeus_dialog'"]] remoteExec ["addAction",0,true];
 
 [_pos,[1, 1, 0.3],0.25,[0.09,0.09,0.09],_camp_zelt_1,[2,-1,1.5]] remoteExec ["prometheus_fnc_spawnLightPoint",0,false];

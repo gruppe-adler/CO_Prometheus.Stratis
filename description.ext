@@ -8,31 +8,25 @@ class Header
 };
 
 OnLoadMission = "Zeus Template for all maps";
-author = "Nomisum für Gruppe Adler";  //appears as author in overview and loading screen
-overviewText = "Zeus Template"; //appears in overview and loading screen
-onLoadName = "Prometheus"; //mission name for loading screen only
+author = "Nomisum & McDiod für Gruppe Adler";
+overviewText = "Zeus Template";
+onLoadName = "Prometheus";
 onLoadMissionTime = True;
-disabledAI = 0; //1
+disabledAI = 1;
 enableDebugConsole = 1;
 allowFunctionsRecompile = 1;
 loadScreen = "pic\loading.jpg";
 
 #include "cfgParams.hpp"
 #include "cfgIslands.hpp"
+#include "dialogs\cfgDialogs.hpp"
 
 class CfgFunctions {
 	#include "functions\cfgFunctions.hpp"
+	#include "dialogs\cfgFunctions.hpp"
 	#include "zeus_modules\cfgFunctions.hpp"
-	#include "node_modules\grad-loadout\cfgFunctions.hpp"
-};
 
-class RscTitles {
-    class prometheus_Default {
-        idd = -1;
-        fadein = 0;
-        fadeout = 0;
-        duration = 0;
-    };
+	#include "node_modules\grad-loadout\cfgFunctions.hpp"
 };
 
 class Loadouts {
