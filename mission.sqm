@@ -668,7 +668,7 @@ class Mission
 					class Attributes
 					{
 						rank="MAJOR";
-						init="0 = [this] execVM ""dynamicGroups\createCommand.sqf"";";
+						init="";
 						name="blufor_teamlead";
 						description="Commander (Zeus)";
 						isPlayer=1;
