@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1861.402,47.309132,6127.6558};
-		dir[]={-0.37044391,-0.35805067,-0.8570838};
-		up[]={-0.14205705,0.9336974,-0.32867509};
-		aside[]={-0.91793931,6.5640779e-007,0.39674473};
+		pos[]={1674.8463,143.53743,5966.6567};
+		dir[]={0.45026436,-0.530922,-0.71790832};
+		up[]={0.28209698,0.8474189,-0.44977969};
+		aside[]={-0.84716773,5.6345016e-008,-0.53133434};
 	};
 };
 binarizationWanted=0;
@@ -628,7 +628,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1804.1444,5.5014391,5983.6138};
-						angles[]={-0,6.0767708,0};
+						angles[]={0,6.0767708,0};
 					};
 					side="East";
 					flags=4;
@@ -668,7 +668,6 @@ class Mission
 					class Attributes
 					{
 						rank="MAJOR";
-						init="";
 						name="blufor_teamlead";
 						description="Commander (Zeus)";
 						isPlayer=1;
