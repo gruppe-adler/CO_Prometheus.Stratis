@@ -16,7 +16,6 @@ class Params
         default = 0;
     };
 
-
 	class Zeitbeschleunigung
 	{
 		title = "Time Acceleration";
@@ -24,6 +23,8 @@ class Params
 		texts[] = {"normal","2h in 1h","4h in 1h"};
 		default = 1;
 	};
+
+	#include "\a3\functions_f\Params\paramGuerFriendly.hpp"
 
 	//THESE WERE NOT IN USE
 	/*class EnableReplay
