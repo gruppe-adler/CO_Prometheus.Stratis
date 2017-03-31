@@ -24,7 +24,7 @@ class Params
 		default = 1;
 	};
 
-	#include "\a3\functions_f\Params\paramGuerFriendly.hpp"
+	#include "\a3\functions_f\params\paramguerfriendly.hpp"
 
 	//THESE WERE NOT IN USE
 	/*class EnableReplay
