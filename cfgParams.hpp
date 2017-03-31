@@ -24,7 +24,19 @@ class Params
 		default = 1;
 	};
 
-	#include "\a3\functions_f\params\paramguerfriendly.hpp"
+	class GuerFriendly
+	{
+		title = "Independent verbündet mit";
+		values[] = {-1,1,0,2};
+		texts[] = {
+			"Niemandem",
+			"WEST",
+			"EAST",
+			"WEST und EAST"
+		};
+		default = -1;
+		function = "BIS_fnc_paramGuerFriendly";
+	};
 
 	//THESE WERE NOT IN USE
 	/*class EnableReplay
