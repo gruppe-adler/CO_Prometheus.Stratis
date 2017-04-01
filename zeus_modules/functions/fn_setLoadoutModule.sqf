@@ -20,4 +20,4 @@ private _sidePrefix = ["BLU_F","OPF_F","IND_F","CIV_F"] select _sideID;
 private _selLoadout = _loadoutsStr select _loadoutID;
 
 missionNamespace setVariable ["prometheus_factionLoadout"+_sidePrefix,_selLoadout,true];
-[_sidePrefix, _selLoadout] remoteExec ["prometheus_zeus_fnc_setLoadoutModule_apply",0,false];
+[_sidePrefix, _selLoadout] remoteExec ["prometheus_zeus_fnc_setLoadoutModule_apply",_selSide,false];
