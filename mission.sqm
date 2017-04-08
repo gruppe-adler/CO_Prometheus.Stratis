@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=561;
+		nextID=562;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1674.8463,143.53743,5966.6567};
-		dir[]={0.45026436,-0.530922,-0.71790832};
-		up[]={0.28209698,0.8474189,-0.44977969};
-		aside[]={-0.84716773,5.6345016e-008,-0.53133434};
+		pos[]={1720.209,37.726048,5912.4917};
+		dir[]={0.91877186,-0.21201958,0.333049};
+		up[]={0.19933444,0.97726429,0.0722574};
+		aside[]={0.34079728,2.4563633e-008,-0.9401471};
 	};
 };
 binarizationWanted=0;
@@ -52,13 +52,14 @@ addons[]=
 	"ace_advanced_throwing",
 	"ace_weather",
 	"ace_viewdistance",
-	"A3_Modules_F_Heli_Misc"
+	"A3_Modules_F_Heli_Misc",
+	"ace_respawn"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=26;
+		items=27;
 		class Item0
 		{
 			className="ace_medical";
@@ -239,6 +240,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item26
+		{
+			className="ace_respawn";
+			name="ACE3 - Respawn";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
 	};
 };
 randomSeed=5319570;
@@ -271,7 +279,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=119;
+		items=120;
 		class Item0
 		{
 			dataType="Logic";
@@ -2346,11 +2354,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={695.71478,-44.920288,704.20459};
+				position[]={695.71503,-44.920486,704.20502};
 			};
 			id=174;
 			type="ACE_moduleReviveSettings";
-			atlOffset=76.779274;
+			atlOffset=76.778999;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2368,7 +2376,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=3600;
+							value=-1;
 						};
 					};
 				};
@@ -15385,6 +15393,59 @@ class Mission
 			id=553;
 			type="ModuleSlingload_F";
 			atlOffset=17.477684;
+		};
+		class Item119
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={699.5614,0,399.27051};
+			};
+			id=561;
+			type="ACE_ModuleRespawn";
+			atlOffset=120.75823;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_ModuleRespawn_RemoveDeadBodiesDisconnected";
+					expression="_this setVariable ['RemoveDeadBodiesDisconnected',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ACE_ModuleRespawn_SavePreDeathGear";
+					expression="_this setVariable ['SavePreDeathGear',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 	class Connections
