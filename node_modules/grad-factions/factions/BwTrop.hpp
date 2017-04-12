@@ -57,6 +57,7 @@ class BWTrop: BWFleck {
         };
 
         class soldier_exp_F: soldier_exp_F {
+            headgear = "ARC_GER_Tropentarn_Helmet_Light_EDO";
             backpack = "ARC_GER_Kitbag_compact_Tropentarn";
         };
 

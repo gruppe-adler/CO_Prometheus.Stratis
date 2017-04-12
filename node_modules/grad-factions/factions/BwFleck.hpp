@@ -135,6 +135,7 @@ class BWFleck {
 
         //Explosive Specialist
         class soldier_exp_F: Soldier_F {
+            headgear = "ARC_GER_Flecktarn_Helmet_EOD";
             backpack = "ARC_GER_Kitbag_compact_Flecktarn";
             addItemsToBackpack[] = {
                 "ACE_Clacker",
