@@ -44,5 +44,6 @@ class Loadouts {
 
     class Faction {
         #include "node_modules\grad-factions\loadouts.hpp"
+		#include "ams_loadouts\BwFleckAMS.hpp"
     };
 };
