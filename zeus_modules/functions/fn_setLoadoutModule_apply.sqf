@@ -7,3 +7,5 @@ params ["_sidePrefix", "_selLoadout"];
     };
     false
 } count allUnits;
+
+[] call grad_customGear_fnc_loadActions;

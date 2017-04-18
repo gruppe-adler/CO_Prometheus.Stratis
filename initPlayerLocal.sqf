@@ -2,3 +2,4 @@
 
 [] execVM "zeus_modules\initZeusModules.sqf";
 [] execVM "intro.sqf";
+[] call grad_customGear_fnc_loadActions;

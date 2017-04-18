@@ -28,6 +28,7 @@ respawnDialog = 0;
 #include "cfgParams.hpp"
 #include "cfgIslands.hpp"
 #include "dialogs\cfgDialogs.hpp"
+#include "node_modules\grad-customGear\saveDialog\dialog.hpp"
 
 class CfgFunctions {
 	#include "functions\cfgFunctions.hpp"
@@ -35,6 +36,7 @@ class CfgFunctions {
 	#include "zeus_modules\cfgFunctions.hpp"
 
 	#include "node_modules\grad-loadout\cfgFunctions.hpp"
+	#include "node_modules\grad-customGear\cfgFunctions.hpp"
 };
 
 class Loadouts {
@@ -46,4 +48,13 @@ class Loadouts {
         #include "node_modules\grad-factions\loadouts.hpp"
 		#include "ams_loadouts\BwFleckAMS.hpp"
     };
+};
+
+class grad_customGear {
+	allowHelmet = 1;
+	allowGoggles = 1;
+	allowSimpleScopes = 1;
+	allowMagnifyingScopes = 1;
+	allowMarksmanScopes = 1;
+	actionsOnMissionStart = 0;
 };
