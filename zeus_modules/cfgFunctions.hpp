@@ -3,6 +3,7 @@ class prometheus_zeus {
         file = zeus_modules\functions;
 
         class diagClientModule_drawFPS {};
+        class diagClientModule_init {postInit = 1;};
         class diagClientModule_updateFPS {};
         class diagClientModule {};
         class endMissionEffectModule_effect {};
