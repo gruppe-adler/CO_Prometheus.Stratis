@@ -13,6 +13,7 @@ class prometheus_zeus {
         class setStartPositionModule_spawnArsenal {};
         class setStartPositionModule_spawnBase {};
         class setStartPositionModule {};
+        class toggleBFTModule {};
         class transferOwnerModule {};
     };
 };
