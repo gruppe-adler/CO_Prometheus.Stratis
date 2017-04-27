@@ -53,7 +53,7 @@ class BWTrop: BWFleck {
 
         class medic_F: medic_F {
             headgear = "ARC_GER_Tropentarn_Helmet_simple_medic";
-            backpack = "ARC_GER_Backpack_Tropentarn";
+            backpack = "ARC_GER_Backpack_Tropentarn_Med";
         };
 
         class soldier_exp_F: soldier_exp_F {
