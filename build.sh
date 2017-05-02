@@ -13,6 +13,7 @@ islands=(
 	Chernarus_Winter
 	fallujah
 	Kunduz
+	lythium
 	mbg_celle2
 	ProvingGrounds_PMC
 	Sara_dbe1
@@ -20,7 +21,6 @@ islands=(
 	Stratis
 	Woodland_ACR
 	Zargabad
-	fata
 	takistan
 	Tanoa
 	vt5
