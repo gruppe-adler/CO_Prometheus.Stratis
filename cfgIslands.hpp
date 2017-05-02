@@ -119,6 +119,13 @@ class CfgIslands {
         woodland = false;
         displayName = 'Kunduz';
     };
+	class lythium {
+		startPosBlu[] = {47,245};
+        startPosOpf[] = {132,47};
+        waterAroundMap = false;
+        woodland = false;
+        displayName = 'Lythium';
+	};
 	class pja305 {
         startPosBlu[] = {12870, 780};
         startPosOpf[] = {13830, 780};
