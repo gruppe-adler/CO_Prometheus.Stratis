@@ -19,7 +19,7 @@ class EditorData
 		pos[]={1496.8206,30.5,4978.251};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -14724,11 +14724,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={797.23566,-94.414063,799.82593};
+				position[]={797.23602,-94.414307,799.82599};
 			};
 			id=552;
 			type="ace_viewdistance_ModuleSettings";
-			atlOffset=17.48024;
+			atlOffset=17.479996;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14746,7 +14746,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=3500;
+							value=5000;
 						};
 					};
 				};
