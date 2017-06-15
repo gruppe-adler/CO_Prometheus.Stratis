@@ -43,7 +43,7 @@ if (!_spawnBase && _spawnArsenal) then {[_position] remoteExec ["prometheus_zeus
     if (side _x == _selSide && !isNull _x) then {
         [{
             params ["_position","_unit"];
-            _tmpPos = [_position,[0,10], random 360,0,[1,50]] call SHK_pos;
+            _tmpPos = [_position,[0,10],[0,360]] call prometheus_fnc_findRandomPos;
             [_unit,_tmpPos] remoteExec ["prometheus_fnc_teleport",_unit,false];
         }, [_position,_x], (random 2) + 2] call CBA_fnc_waitAndExecute;
     };

@@ -4,8 +4,6 @@
 enableSentences false;
 enableRadio false;
 
-call compile preprocessfile "SHK_pos\shk_pos_init.sqf";
-
 if (!isMultiplayer) then { // Editor
 	{_x disableAI "MOVE"} forEach allUnits;
 };
