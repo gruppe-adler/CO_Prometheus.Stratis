@@ -126,6 +126,14 @@ class CfgIslands {
         woodland = false;
         displayName = 'Lythium';
 	};
+	class Malden {
+		startPosBlu[] = {8097,10478};
+		startPosOpf[] = {8023,9783};
+		startPosInd[] = {8091,10198};
+		waterAroundMap = true;
+		woodland = true;
+		displayName = "Malden";
+	};
 	class pja305 {
         startPosBlu[] = {12870, 780};
         startPosOpf[] = {13830, 780};

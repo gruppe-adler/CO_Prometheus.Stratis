@@ -14,6 +14,7 @@ islands=(
 	fallujah
 	Kunduz
 	lythium
+	Malden
 	mbg_celle2
 	ProvingGrounds_PMC
 	Sara_dbe1
