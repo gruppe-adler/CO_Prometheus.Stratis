@@ -39,8 +39,8 @@ if (isServer) then {
 				};
 
 				_tmpPos = [_targetPosition,[0,10],[0,360]] call prometheus_fnc_findRandomPos;
-				_unit setPos _tmpPos;
-				_unit switchmove "AmovPercMstpSnonWnonDnon";
+				_x setPos _tmpPos;
+				_x switchmove "AmovPercMstpSnonWnonDnon";
  			};
  		} forEach allUnits;
  	};
