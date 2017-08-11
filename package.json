@@ -1,7 +1,7 @@
 {
     "name": "grad-co-prometheus",
     "description": "Zeus mission template for all maps",
-    "version": "0.9.0",
+    "version": "0.10.0",
     "contributors": [
         {
             "name": "nomisum"
