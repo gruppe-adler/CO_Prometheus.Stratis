@@ -62,3 +62,9 @@ class grad_customGear {
 	allowMarksmanScopes = 1;
 	actionsOnMissionStart = 0;
 };
+
+class Extended_InitPost_EventHandlers  {
+	class CAManBase {
+	   init = "params ['_u']; if (!(isPlayer _u) && {local _u}) then {[_u] call GRAD_Loadout_fnc_doLoadoutForUnit};";
+	};
+};
