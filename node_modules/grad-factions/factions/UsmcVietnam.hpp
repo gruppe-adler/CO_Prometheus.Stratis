@@ -43,7 +43,7 @@ class UsmcVietnam {
 		watch = "ItemWatch";
 		gps = "";
 		radio = "";
-		googles = "";
+		goggles = "";
 		nvgoggles = NVITEM;
     };
     class Type {
