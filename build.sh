@@ -4,28 +4,8 @@
 cpbo_path="$1"
 missionname="CO_Prometheus"
 
-islands=(
-	Altis
-	Beketov
-	Bootcamp_ACR
-	Chernarus
-	Chernarus_Summer
-	Chernarus_Winter
-	fallujah
-	Kunduz
-	lythium
-	Malden
-	mbg_celle2
-	ProvingGrounds_PMC
-	Sara_dbe1
-	Shapur_BAF
-	Stratis
-	Woodland_ACR
-	Zargabad
-	takistan
-	Tanoa
-	vt5
-)
+islands=($(curl http://arma.gruppe-adler.de/userconfig/islands.txt))
+islands=("${islands[@]%%:*}")
 
 ### AS AS USER, DONT EDIT BELOW THIS LINE ###
 

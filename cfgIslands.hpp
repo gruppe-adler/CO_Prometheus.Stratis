@@ -141,6 +141,14 @@ class CfgIslands {
         woodland = false;
         displayName = 'pja305';
     };
+	class prei_khmaoch_luong {
+		spawnPosBlu[] = {8034,8372};
+		spawnPosOpf[] = {8284,8104};
+		spawnPosInd[] = {8437,7397};
+		waterAroundMap = false;
+		woodland = true;
+		displayName = "Prei Khmaoch Luong";
+	};
 	class mbg_celle2 {
         startPosBlu[] = {-933, -2975};
 		startPosOpf[] = {312, -2694};
