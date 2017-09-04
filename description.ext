@@ -17,11 +17,13 @@ loadScreen = "pic\loading.jpg";
 disabledAI = 1;
 allowFunctionsRecompile = 1;
 
-//mcdiod, nomisum
+enableDebugConsole = 1;
+
+/*//mcdiod, nomisum
 enableDebugConsole[] = {
 	"76561198044320063",
 	"76561197961080101"
-};
+};*/
 
 respawn = 3;
 respawnDelay = 10;
