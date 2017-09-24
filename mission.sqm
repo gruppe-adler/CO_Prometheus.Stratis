@@ -26,8 +26,6 @@ binarizationWanted=0;
 addons[]=
 {
 	"A3_Characters_F",
-	"asr_ai3_cfgcamouflage",
-	"asr_ai3_cfgvehicles",
 	"ace_medical",
 	"A3_Modules_F_Curator_Curator",
 	"ace_zeus",
