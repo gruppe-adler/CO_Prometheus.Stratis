@@ -4,7 +4,7 @@
 cpbo_path="$1"
 missionname="CO_Prometheus"
 
-islands=($(curl http://arma.gruppe-adler.de/userconfig/islands.txt))
+islands=($(curl -k https://arma.gruppe-adler.de/userconfig/islands.txt))
 islands=("${islands[@]%%:*}")
 
 ### AS AS USER, DONT EDIT BELOW THIS LINE ###
