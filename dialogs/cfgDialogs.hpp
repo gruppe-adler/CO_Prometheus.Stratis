@@ -2,11 +2,7 @@
 #include "baseDefines.hpp"
 #include "baseRsc.hpp"
 
-#include "messageZeus\dialog.hpp"
-
 class RscTitles {
-
-    #include "messageZeus\title.hpp"
 
     class prometheus_Default {
         idd = -1;
