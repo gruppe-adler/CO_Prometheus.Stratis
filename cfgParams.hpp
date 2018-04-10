@@ -26,7 +26,7 @@ class Params
 
 	class GuerFriendly
 	{
-		title = "Independent verbündet mit";
+		title = "Independent friendly with";
 		values[] = {-1,1,0,2};
 		texts[] = {
 			"Niemandem",
@@ -36,40 +36,5 @@ class Params
 		};
 		default = -1;
 		function = "BIS_fnc_paramGuerFriendly";
-	};
-
-	//THESE WERE NOT IN USE
-	/*class EnableReplay
-	{
-		title = "enable replay";
-		values[] = {false, true};
-		texts[] = {"no", "yes"};
-		default = false;
-		isGlobal = 0;
-	};*/
-
-	/*class IsStreamable
-	{
-		title = "enable live stream (needs 'enable replay')";
-		values[] = {false, true};
-		texts[] = {"no","yes"};
-		default = 0;
-		isGlobal = 0;
-	};*/
-
-	/*class Debug_Mode
-	{
-		title = "Enable Debug Log";
-		values[] = {0, 1};
-		texts[] = {"no","yes"};
-		default = 0;
-	};*/
-
-	class HC_enabled
-	{
-		title = "Enable HC";
-		values[] = {0, 1};
-		texts[] = {"no","yes"};
-		default = 0;
 	};
 };

@@ -6,7 +6,6 @@ class prometheus {
         class teleport {};
     };
     class init {
-        class initHeadless {};
         class setMissionParams {postInit = 1;};
     };
 };
