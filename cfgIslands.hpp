@@ -172,6 +172,14 @@ class CfgIslands {
         woodland = true;
         displayName =  'ProvingGrounds_PMC';
     };
+	class ruha {
+		startPosBlu[] = {8315, 100};
+		startPosOpf[] = {8315, 500};
+		startPosInd[] = {8315, 900};
+        waterAroundMap = false;
+        woodland = true;
+        displayName =  'Ruha';
+	};
 	class Sara {
         startPosBlu[] = {18080, 18535};
         startPosOpf[] = {18200, 18060};
