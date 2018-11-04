@@ -278,6 +278,14 @@ class CfgIslands {
         woodland = true;
         displayName = 'Woodland_ACR';
     };
+    class WL_Rosche {
+        startPosBlu[] = {-110, -226};
+		startPosOpf[] = {955, -185};
+		startPosInd[] = {2060, -243};
+        waterAroundMap = false;
+        woodland = true;
+        displayName = 'WL_Rosche';
+    };
 	class xcam_prototype {
         startPosBlu[] = {4000, 4150};
         startPosOpf[] = {4450, 3830};
