@@ -7,6 +7,14 @@ class CfgIslands {
         woodland = true;
         displayName =  'Altis';
     };
+    class tem_anizay {
+        startPosBlu[] = {8580, 6290};
+		startPosOpf[] = {8581, 7719};
+		startPosInd[] = {7719, 7800};
+        waterAroundMap = false;
+        woodland = false;
+        displayName =  'Anizay';
+    };
 	class Beketov {
 		startPosBlu[] = {-746, -1014};
         startPosOpf[] = {382, -1058};
